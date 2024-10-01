@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>園桌武士-產品管理介面</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myall.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/superfish.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all" />
+    <link type="text/css" href="css/jqueryui/jquery.ui.datepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/colours/green.css" type="text/css" media="all" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+        rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css' />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/myall.css?v=1.0">
+</head>
+
+<body>
+    <!-- BEGIN .wrapper -->
+    <div class="wrapper">
+
+        <!-- 上方登入資訊條 -->
+        <div class="topbar clearfix">
+
+            <!-- BEGIN .social-icons -->
+            <ul class="social-icons">
+                <li><a href="#"><span id="twitter_icon"></span></a></li>
+                <li><a href="#"><span id="facebook_icon"></span></a></li>
+                <li><a href="#"><span id="googleplus_icon"></span></a></li>
+                <li><a href="#"><span id="youtube_icon"></span></a></li>
+                <!-- END .social-icons -->
+            </ul>
+
+            <!-- BEGIN .topbar-right -->
+            <div class="topbar-right clearfix">
+                <ul class="clearfix">
+                    <span class=" fw-900 ms-3">當前會員:
+                        <span class="txt20 fw-900" id="s02_login_username" style="margin-right: 20px;">未登錄</span>
+                    </span>
+                    <!-- 移除了 button，將其功能轉移到 a 標籤 -->
+                    <li class="">
+                        <a href="checkout.html" data-bs-toggle="modal" data-bs-target="#loginModal" id="s02_login_btn"
+                            class="btn"> <span class="icon-placeholder"></span>登入</a>
+                    </li>
+                    <!-- 移除了 button，將其功能轉移到 a 標籤 -->
+                    <li class="">
+                        <a href="my-account.html" data-bs-toggle="modal" data-bs-target="#registerModal"
+                            id="s02_register_btn" class="btn">註冊</a>
+                    </li>
+                    <!-- 移除了 button，將其功能轉移到 a 標籤 -->
+                    <li class="">
+                        <a href="project-spa.html" id="s02_logout_btn" class="btn d-none">登出</a>
+                    </li>
+                    <li class="">
+                        <a href="my-member.html">個人訂單查詢</a>
+                    </li>
+                </ul>
+
+                <div class="cart-top" style="height: 50px;">
+                    <p><a href="cart.html" style="text-align: center;">購物車</a></p>
+                </div>
+                <!-- END .topbar-right -->
+            </div>
+
+            <!-- END .topbar -->
+        </div>
+
+        <!-- 大標題 園桌武士-->
+        <div id="s01" style="height:200px; display: flex; align-items: center; justify-content: center;"
+            class="topbar clearfix">
+            <h1 class="text-center align-content-center">
+                園桌武士 <span class="txt30">園藝造景工坊</span>
+            </h1>
+        </div>
+
+        <!-- 選單 -->
+        <div class="bg10" id="s02">
+            <div class="banner">
+                <nav class="bg20 mt-4" style="height:70px;">
+                    <ul>
+                        <li><a href="project-spa.html" class="bgbtn10">首頁</a></li>
+                        <li class="dropdown"><a href="" class="bgbtn10">燈飾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product-single1.html">燈飾1</a></li>
+                                <li><a href="product-single2.html">燈飾2</a></li>
+                                <li><a href="product-single3.html">燈飾3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="" class="bgbtn10">戶外桌椅</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product-single4.html">戶外桌椅1</a></li>
+                                <li><a href="product-single5.html">戶外桌椅2</a></li>
+                                <li><a href="product-single6.html">戶外桌椅3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="" class="bgbtn10">園藝植物</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product-single7.html">園藝植物1</a></li>
+                                <li><a href="product-single8.html">園藝植物2</a></li>
+                                <li><a href="product-single9.html">園藝植物3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="project-aboutus.html" class="bgbtn10">關於我們</a></li>
+                        <li class="dropdown"><a href="" class="bgbtn10 d-none" id="member_manage">管理</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="member.html">會員管理</a></li>
+                                <li><a href="project-contact.html">產品管理</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- loginModal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-bg-warning">
+                        <h1 class="modal-title fs-5 fw-900 text-white" id="exampleModalLabel">會員登入</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="loginModal_username" class="form-label">帳號</label>
+                            <input type="text" name="loginModal_username" id="loginModal_username" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginModal_password" class="form-label">密碼</label>
+                            <input type="password" name="loginModal_password" id="loginModal_password"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" id="loginModal_ok_btn">確認</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- registerModal -->
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <!-- header -->
+                    <div class="modal-header text-bg-success">
+                        <h1 class="modal-title fs-5 fw-900 text-white" id="exampleModalLabel">會員註冊</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>會員守則</h3>
+                                <h4>會員資格</h4>
+                                <ul>
+                                    <li>會員需年滿18歲，並同意遵守本守則。</li>
+                                </ul>
+                                <h4>會員權利</h4>
+                                <ul>
+                                    <li>會員享有參加活動、使用設施、及享受優惠的權利。</li>
+                                </ul>
+                                <h4>會員義務</h4>
+                                <ul>
+                                    <li>會員需遵守設施使用規定，愛護公共財物，並保持場所整潔。</li>
+                                </ul>
+                                <h4>會員行為</h4>
+                                <ul>
+                                    <li>會員需尊重其他會員及工作人員，不得有不當行為。</li>
+                                </ul>
+                                <h4>終止會員資格</h4>
+                                <ul>
+                                    <li>違反守則者，經警告後仍未改善，將取消會員資格。</li>
+                                </ul>
+                                <div class="form-check">
+                                    <input type="checkbox" name="registerModal_chk" id="registerModal_chk"
+                                        class="form-check-input is-invalid">
+                                    <label for="registerModal_chk" class="form-check-label">同意</label>
+                                    <div class="valid-feedback">同意遵守規定</div>
+                                    <div class="invalid-feedback">不同意遵守規定</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="registerModal_username" class="form-label">帳號</label>
+                                    <input type="text" name="registerModal_username" id="registerModal_username"
+                                        class="form-control is-invalid" placeholder="字數3-8">
+                                    <div class="valid-feedback">符合規定</div>
+                                    <div class="invalid-feedback">不符合規定</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerModal_password" class="form-label">密碼</label>
+                                    <input type="password" name="registerModal_password" id="registerModal_password"
+                                        class="form-control is-invalid" placeholder="字數3-8">
+                                    <div class="valid-feedback">符合規定</div>
+                                    <div class="invalid-feedback">不符合規定</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerModal_re_password" class="form-label">確認密碼</label>
+                                    <input type="password" name="registerModal_re_password"
+                                        id="registerModal_re_password" class="form-control is-invalid"
+                                        placeholder="確認密碼">
+                                    <div class="valid-feedback">符合規定</div>
+                                    <div class="invalid-feedback">不符合規定</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerModal_email" class="form-label">email</label>
+                                    <input type="email" name="registerModal_email" id="registerModal_email"
+                                        class="form-control is-invalid" placeholder="字數3-15">
+                                    <div class="valid-feedback">符合規定</div>
+                                    <div class="invalid-feedback">不符合規定</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" id="registerModal_ok_btn">確認</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 以上所有分頁通用 ----------------------------------------------------------------------------------------------->
+
+
+        <div class="section page-content clearfix">
+
+            <h2 class="page-title">產品狀態管理</h2>
+
+            <p>管理員 產品管理介面 <a href="#">跳轉會員管理介面</a></p>
+
+            <div class="tag-title-wrap clearfix">
+                <h4 class="tag-title">Recent Orders</h4>
+            </div>
+            <li class="" style="list-style: none;">
+                <a data-bs-toggle="modal" data-bs-target="#CreateModal" id="Create_btn" class="btn"> <span
+                        class="icon-placeholder">新增</span></a>
+            </li>
+            <table width="100%" class="account-table">
+                <thead>
+                    <tr>
+                        <th width="8%">產品編號</th>
+                        <th width="8%">產品名稱</th>
+                        <th width="8%">產品圖片</th>
+                        <th width="8%">產品顏色</th>
+                        <th width="8%">庫存數量</th>
+                        <th width="8%">產品價格</th>
+                        <th width="8%">產品狀態</th>
+                        <th width="15%">產品更改</th>
+                    </tr>
+                </thead>
+                <tbody id="datalist">
+                    <tr>
+                        <td data-th="產品編號"><span class="table-col">002</span></td>
+                        <td data-th="產品名稱"><span class="table-col">綠茶</span></td>
+                        <td data-th="產品圖片"><span class="table-col"><img src="images/hotelboss.jpg" width="80px"
+                                    height="80px"></span></td>
+                        <td data-th="產品顏色"><span class="table-col">1</span></td>
+
+                        <td data-th="庫存數量"><span class="table-col">1</span></td>
+                        <td data-th="產品價格"><span class="table-col">1</span></td>
+                        <td>
+                            <div class="form-check form-switch">
+                                <input type="checkbox" name="switch01" id="switch01" class="form-check-input" checked>
+                                <label for="switch_xxx" class="form-check-label">上架</label>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateModal"
+                                data-id="xxx" data-num="xxx" data-price="xxx" id="btn_update">更新</button>
+                        </td>
+                    </tr>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination" id="pageList">
+                    <li class="page-item" onclick="drawTable(xxx)">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- 創建產品表單 -->
+        <div class="modal fade" id="CreateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-bg-success">
+                        <h1 class="modal-title fs-5 fw-900 text-white" id="exampleModalLabel">創建產品表單</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="CreateModal_productid" class="form-label">產品ID</label>
+                            <input type="text" name="CreateModal_productid" id="CreateModal_productid"
+                                class="form-control is-invalid">
+                            <div class="valid-feedback">符合規定</div>
+                            <div class="invalid-feedback">不得為空</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="CreateModal_productname" class="form-label">產品名稱</label>
+                            <input type="text" name="CreateModal_productname" id="CreateModal_productname"
+                                class="form-control is-invalid">
+                            <div class="valid-feedback">符合規定</div>
+                            <div class="invalid-feedback">不得為空</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="CreateModal_photo" class="form-label">產品圖片</label>
+                            <input type="file" name="CreateModal_photo" id="CreateModal_photo"
+                                class="form-control is-invalid">
+                            <div class="valid-feedback">符合規定</div>
+                            <div class="invalid-feedback">不得為空</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="CreateModal_color" class="form-label">產品顏色</label>
+                            <input type="text" name="CreateModal_color" id="CreateModal_color"
+                                class="form-control is-invalid">
+                            <div class="valid-feedback">符合規定</div>
+                            <div class="invalid-feedback">不得為空</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="CreateModal_num" class="form-label">庫存數量</label>
+                            <input type="number" name="CreateModal_num" id="CreateModal_num"
+                                class="form-control is-invalid">
+                            <div class="valid-feedback">符合規定</div>
+                            <div class="invalid-feedback">不得為空</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="CreateModal_price" class="form-label">產品價格</label>
+                            <input type="number" name="CreateModal_price" id="CreateModal_price"
+                                class="form-control is-invalid">
+                            <div class="valid-feedback">符合規定</div>
+                            <div class="invalid-feedback">不得為空</div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" id="CreateModal_ok_btn">確認</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- 修改產品表單 -->
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-bg-success">
+                    <h1 class="modal-title fs-5 fw-900 text-white" id="exampleModalLabel">修改產品表單</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="UpdateModal_id" class="form-label">id</label>
+                        <input type="text" name="UpdateModal_id" id="UpdateModal_id" class="form-control" disabled>
+                    </div>
+                    <div class="mb-3">
+                        <label for="UpdateModal_productname" class="form-label">產品名稱</label>
+                        <input type="text" name="UpdateModal_productname" id="UpdateModal_productname"
+                            class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="UpdateModal_photo" class="form-label">產品圖片</label>
+                        <input type="file" name="UpdateModal_photo" id="UpdateModal_photo" class="form-control"
+                            onchange="showFileName()">
+                        <div id="photoPath" class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="UpdateModal_color" class="form-label">產品顏色</label>
+                        <input type="text" name="UpdateModal_color" id="UpdateModal_color" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="UpdateModal_num" class="form-label">庫存數量</label>
+                        <input type="number" name="UpdateModal_num" id="UpdateModal_num" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="UpdateModal_price" class="form-label">產品價格</label>
+                        <input type="number" name="UpdateModal_price" id="UpdateModal_price" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="UpdateModal_ok_btn">更新</button>
+                </div>
+                <input type="hidden" id="UpdateModal_id" value="123"> <!-- 假設 123 是產品 ID -->
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--JavaScript-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'></script>
+    <script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+        var flag_username = false;
+        var flag_password = false;
+        var flag_re_password = false;
+        var flag_email = false;
+        var flag_chk = false;
+
+
+        $(function () {
+            // //wow
+            // new WOW().init();
+            // //counter up
+            // //数字跳动
+            // const counterUp = window.counterUp.default
+
+            // const callback = entries => {
+            //     entries.forEach(entry => {
+            //         const el = entry.target
+            //         if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+            //             counterUp(el, {
+            //                 duration: 2000,
+            //                 delay: 16,
+            //             })
+            //             el.classList.add('is-visible')
+            //         }
+            //     })
+            // }
+            // //这两行是重点
+            // const IO = new IntersectionObserver(callback, { threshold: 1 })
+
+            // const el01 = document.querySelector('.counter01')
+            // IO.observe(el01)
+
+            // const el02 = document.querySelector('.counter02')
+            // IO.observe(el02)
+
+            // const el03 = document.querySelector('.counter03')
+            // IO.observe(el03)
+
+            // const el04 = document.querySelector('.counter04')
+            // IO.observe(el04)
+
+            //確認uid是否存在且合法
+            if (getCookie("Uid01") != "") {
+                //將uid01傳遞至後端api確認是否合法
+                var dataJSON = {};
+                dataJSON["Uid01"] = getCookie("Uid01");
+                console.log(JSON.stringify(dataJSON));
+
+                $.ajax({
+                    type: "POST",
+                    url: "uid-check-api.php",
+                    data: JSON.stringify(dataJSON),
+                    dataType: "json",
+                    success: showdata_check_uid,
+                    error: function () {
+                        alert("error-uid-check-api.php");
+                    }
+                });
+            } else {
+                // alert("尚未登入，請登入使用附加功能");
+                // // location.href = "project-spa.html";
+            }
+
+
+
+            // 註冊功能
+
+            // 監聽username
+            $("#registerModal_username").bind("input propertychange", function () {
+                if ($(this).val().length > 2 && $(this).val().length < 9) {
+
+                    var dataJSON = {};
+                    dataJSON["username"] = $("#registerModal_username").val();
+                    console.log(JSON.stringify(dataJSON));
+                    //傳送至後端API\
+
+                    $.ajax({
+                        type: "POST",
+                        url: "member-check-api.php",
+                        data: JSON.stringify(dataJSON),
+                        dataType: "json",
+                        success: showdata_checkuni,
+                        error: function () {
+                            alert("error-member-check-api.php");
+                        }
+                    });
+                } else {
+                    // 不符合規定
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_username = false;
+                }
+            });
+
+            // 監聽password
+            $("#registerModal_password").bind("input propertychange", function () {
+                if ($(this).val().length > 2 && $(this).val().length < 9) {
+                    // 符合規定
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_password = true;
+                } else {
+                    // 不符合規定
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_password = false;
+                }
+
+                if ($(this).val() !== $("#registerModal_re_password").val()) {
+
+                    $("#registerModal_re_password").removeClass("is-valid");
+                    $("#registerModal_re_password").addClass("is-invalid");
+                    flag_re_password = false;
+                }
+                if ($(this).val() == $("#registerModal_re_password").val()) {
+
+                    $("#registerModal_re_password").removeClass("is-invalid");
+                    $("#registerModal_re_password").addClass("is-valid");
+                    flag_re_password = true;
+                }
+            });
+
+            //監聽registerModal_re_password
+            $("#registerModal_re_password").bind("input propertychange", function () {
+                if ($(this).val() == $("#registerModal_password").val()) {
+                    //符合規定
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_re_password = true;
+                } else {
+                    //不符合規定
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_re_password = false;
+                }
+            });
+
+            //監聽username
+            $("#registerModal_email").bind("input propertychange", function () {
+                if ($(this).val().length > 2 && $(this).val().length < 16) {
+                    //符合規定
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_email = true;
+                } else {
+                    //不符合規定
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_email = false;
+                }
+            });
+
+            //同意按鈕
+            $("#registerModal_chk").change(function () {
+                if ($(this).is(":checked")) {
+                    //打勾 
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_chk = true;
+                } else {
+                    //未打勾
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_chk = false;
+                }
+            });
+
+            //註冊按鈕監聽
+            $("#registerModal_ok_btn").click(function () {
+                if (flag_username && flag_password && flag_re_password && flag_email && flag_chk) {
+
+                    var dataJSON = {};
+                    dataJSON["username"] = $("#registerModal_username").val();
+                    dataJSON["password"] = $("#registerModal_password").val();
+                    dataJSON["email"] = $("#registerModal_email").val();
+
+                    console.log(JSON.stringify(dataJSON));
+
+                    $.ajax({
+                        type: "POST",
+                        url: "member-create-api.php",
+                        data: JSON.stringify(dataJSON),
+                        contentType: "application/json", // 添加這一行
+                        dataType: "json",
+                        success: showdata_register,
+                        error: function (xhr, status, error) {
+                            console.error("AJAX Error: " + status + " - " + error);
+                            alert("Error: " + error);
+                        }
+                    });
+
+                } else {
+                    // alert("欄位有錯請修正!");
+                    if (flag_chk == false) {
+                        Swal.fire({
+                            title: "請按同意!",
+                            showDenyButton: false,
+                            showCancelButton: false,
+                            confirmButtonText: "確認",
+                            denyButtonText: `Don't save`
+                        }).then((result) => {
+                            /* Read more about isConfirmed, isDenied below */
+                            if (result.isConfirmed) {
+                                Swal.fire("確認", "", "success");
+                            } else if (result.isDenied) {
+                                Swal.fire("Changes are not saved", "", "info");
+                            }
+                        });
+                    }
+
+                }
+            });
+
+            //**********************************登入功能***********************************************
+            //登入按鈕監聽
+            $("#loginModal_ok_btn").click(function () {
+                if ($("#loginModal_username").val() != "" && $("#loginModal_password").val() != "") {
+                    //帳號密碼都有輸入
+                    //傳遞登入資料至後端API 執行登入行為
+                    //{"username":"owner01", "password":"123456"}
+                    var dataJSON = {};
+                    dataJSON["username"] = $("#loginModal_username").val();
+                    dataJSON["password"] = $("#loginModal_password").val();
+
+                    console.log(JSON.stringify(dataJSON));
+
+                    $.ajax({
+
+                        type: "POST",
+                        url: "member-login-api.php",
+                        data: JSON.stringify(dataJSON),
+                        dataType: "json",
+                        success: showdata_login,
+                        error: function () {
+                            alert("error-member-login-api.php");
+                        }
+                    });
+
+                } else {
+                    //帳號密碼都有空白欄位
+                    alert("帳號密碼有空白欄位");
+                }
+            });
+
+
+            //登出按鈕監聽
+            $("#s02_logout_btn").click(function () {
+                setCookie("Uid01", "", 7);
+                location.href = "project-spa.html";
+            });
+
+        }); //end fun
+
+        //註冊時檢測帳號是否重複
+        function showdata_checkuni(data) {
+            console.log(data);
+            if (data.state) {
+                $("#registerModal_username").removeClass("is-invalid");
+                $("#registerModal_username").addClass("is-valid");
+                flag_username = true;
+            } else {
+                $("#registerModal_username").removeClass("is-valid");
+                $("#registerModal_username").addClass("is-invalid");
+                flag_username = false;
+            }
+        }
+        //註冊function
+        function showdata_register(data) {
+            console.log(data);
+            if (data.state) {
+                alert(data.message);
+                location.href = "project-spa.html";
+            } else {
+                alert(data.message);
+            }
+        }
+        //登入function
+        function showdata_login(data) {
+            console.log(data);
+            if (data.state) {
+                if (data.data.State == "1") {
+                    alert(data.message);
+                    //loginModal隱藏
+                    $("#loginModal").modal("hide");
+                    //顯示登入帳號
+                    $("#s02_login_username").text();
+                    $("#s02_login_username").text(data.data.Username);
+                    //隱藏登入與註冊按鈕
+                    $("#s02_login_btn").addClass("d-none");
+                    $("#s02_register_btn").addClass("d-none");
+                    //顯示登出按鈕
+                    $("#s02_logout_btn").removeClass("d-none");
+                    $("member_manage").removeClass("d-none");
+
+
+                    // 顯示高級功能
+                    $("#s02btn01").removeClass("disabled");
+                    $("#s02btn02").removeClass("disabled");
+                    $("#s02btn03").removeClass("disabled");
+                    $("#s041").removeClass("d-none");
+                    $("#s042").removeClass("d-none");
+                } else {
+                    alert(data.message + "，你沒資格阿你沒資格!");
+                    //loginModal隱藏
+                    $("#loginModal").modal("hide");
+                    //顯示登入帳號
+                    $("#s02_login_username").text(data.data.Username);
+                    //隱藏登入與註冊按鈕
+                    $("#s02_login_btn").addClass("d-none");
+                    $("#s02_register_btn").addClass("d-none");
+                    //顯示登出按鈕
+                    $("#s02_logout_btn").removeClass("d-none");
+
+
+                }
+                setCookie("Uid01", data.data.Uid01, 7);
+            } else {
+                alert(data.message);
+            }
+        }
+        //uid檢測function
+        function showdata_check_uid(data) {
+            console.log(data);
+            if (data.state) {
+                if (data.data.State == "1") {
+                    // 更新用戶名稱
+                    $("#s02_login_username").text(data.data.Username);
+                    // 隱藏登入與註冊按鈕
+                    $("#s02_login_btn").addClass("d-none");
+                    $("#s02_register_btn").addClass("d-none");
+                    // 顯示登出按鈕
+                    $("#s02_logout_btn").removeClass("d-none");
+                    $("member_manage").removeClass("d-none");
+
+                    // 顯示vip高級功能
+                    $("#s02btn01").removeClass("disabled");
+                    $("#s02btn02").removeClass("disabled");
+                    $("#s02btn03").removeClass("disabled");
+                    $("#s041").removeClass("d-none");
+                    $("#s042").removeClass("d-none");
+                } else {
+                    alert(data.message + "，你沒資格阿你沒資格!");
+                    $("#s02_login_username").text(data.data.Username);
+                    // 隱藏登入與註冊按鈕
+                    $("#s02_login_btn").addClass("d-none");
+                    $("#s02_register_btn").addClass("d-none");
+                    // 顯示登出按鈕
+                    $("#s02_logout_btn").removeClass("d-none");
+
+                    //這裡不給顯示高級功能了
+
+                    //顯示停權警告畫面 s13
+                    $("#s13").removeClass("d-none");
+
+                }
+            }
+        }
+
+        // 以下是cookie都是网上搬来的， 不重要
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+    </script>
+
+
+
+    <script>
+        var flag_productid = false;
+        var flag_productname = false;
+        var flag_photo = false;
+        var flag_color = false;
+        var flag_num = false;
+        var flag_price = false;
+        var flag_chk = false;
+        var u_id; //for update
+        var newdata = [];
+        var mystate;
+
+        var flag_email = true;
+        var u_id; //for update
+        var newdata = [];
+        var mystate;
+
+
+
+        // 創建產品
+        $(function () {
+            // 創建產品
+            $.ajax({
+                type: "POST",
+                url: "Product_Create.php",
+                data: JSON.stringify(dataJSON),
+                dataType: "json",
+                success: product_show,
+                error: function () {
+                    alert("error-Product_Create.php");
+                }
+            });
+        });
+
+
+
+        // cookie設定
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        // 監聽Productid
+        $("#CreateModal_productid").bind("input propertychange", function () {
+            if ($(this).val().length > 0) {
+                console.log($(this).val());
+                $(this).removeClass("is-invalid");
+                $(this).addClass("is-valid");
+
+                flag_productid = true
+            } else {
+                // 不符合規定
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                flag_productid = false;
+            }
+        });
+
+        // 監聽Productname
+        $("#CreateModal_productname").bind("input propertychange", function () {
+            if ($(this).val().length > 0) {
+                console.log($(this).val());
+                $(this).removeClass("is-invalid");
+                $(this).addClass("is-valid");
+                flag_productname = true
+            } else {
+                // 不符合規定
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                flag_productname = false;
+            }
+        });
+
+        // 監聽Productphoto
+        $("#CreateModal_photo").bind("input propertychange", function () {
+            if ($(this).val().length > 0) {
+                console.log($(this).val());
+                $(this).removeClass("is-invalid");
+                $(this).addClass("is-valid");
+                flag_photo = true
+            } else {
+                // 不符合規定
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                flag_photo = false;
+            }
+        });
+
+        // 監聽Productcolor
+        $("#CreateModal_color").bind("input propertychange", function () {
+            if ($(this).val().length > 0) {
+                console.log($(this).val());
+                $(this).removeClass("is-invalid");
+                $(this).addClass("is-valid");
+                flag_color = true
+            } else {
+                // 不符合規定
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                flag_color = false;
+            }
+        });
+
+        // 監聽Product_num
+        $("#CreateModal_num").bind("input propertychange", function () {
+            if ($(this).val().length > 0) {
+                console.log($(this).val());
+                $(this).removeClass("is-invalid");
+                $(this).addClass("is-valid");
+                flag_price = true
+            } else {
+                // 不符合規定
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                flag_num = false;
+            }
+        });
+
+        // 監聽Productprice
+        $("#CreateModal_price").bind("input propertychange", function () {
+            if ($(this).val().length > 0) {
+                console.log($(this).val());
+                $(this).removeClass("is-invalid");
+                $(this).addClass("is-valid");
+                flag_price = true
+            } else {
+                // 不符合規定
+                $(this).removeClass("is-valid");
+                $(this).addClass("is-invalid");
+                flag_price = false;
+            }
+        });
+
+        // 監聽CreateModal_ok_btn
+        $("#CreateModal_ok_btn").click(function () {
+            if (flag_productid) {
+                Swal.fire({
+                    title: "確認是否註冊?",
+                    icon: "question",
+                    showCancelButton: true,
+                    confirmButtonColor: "#3085d6",
+                    cancelButtonColor: "#d33",
+                    confirmButtonText: "確認",
+                    cancelButtonText: "取消"
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        // 取得檔案輸入欄位中的圖片檔案
+                        var file_input = $('#CreateModal_photo');
+                        console.log(file_input.prop('files')); // 檢查是否有正確抓取到檔案資訊
+                        if (file_input.prop('files').length > 0) {
+                            var file_data = file_input.prop('files')[0];
+                            console.log(file_data);
+                            var form_data = new FormData();
+                            form_data.append('file', file_data);
+
+                            // 上傳圖片檔案
+                            $.ajax({
+                                url: 'Product_Uploadfile.php', // 圖片上傳 API
+                                type: 'POST',
+                                data: form_data,
+                                contentType: false,
+                                processData: false,
+                                dataType: 'json',
+                                success: function (response) {
+                                    if (response.state) {
+                                        // 圖片上傳成功，取得上傳後的圖片路徑
+                                        var photoPath = 'images_upload/' + response.dataInfo.儲存檔案名稱;
+
+                                        // 準備產品的 JSON 資料
+                                        var dataJSON = {};
+                                        dataJSON["productId"] = $("#CreateModal_productid").val();
+                                        dataJSON["productName"] = $("#CreateModal_productname").val();
+                                        dataJSON["photo"] = photoPath; // 將圖片路徑放入 photo 欄位
+                                        dataJSON["color"] = $("#CreateModal_color").val();
+                                        dataJSON["num"] = $("#CreateModal_num").val();
+                                        dataJSON["price"] = $("#CreateModal_price").val();
+                                        console.log(JSON.stringify(dataJSON));
+
+                                        // 上傳產品資料
+                                        $.ajax({
+                                            type: "POST",
+                                            url: "Product_Create.php",
+                                            data: JSON.stringify(dataJSON),
+                                            dataType: "json",
+                                            success: showdata,
+                                            error: function () {
+                                                alert("error-Product_Create.php");
+                                            }
+                                        });
+                                    } else {
+                                        // 圖片上傳失敗時的提示
+                                        Swal.fire({
+                                            title: "圖片上傳失敗",
+                                            icon: "error",
+                                            text: response.message
+                                        });
+                                    }
+                                },
+                                error: function () {
+                                    // 圖片上傳請求失敗時的錯誤提示
+                                    Swal.fire({
+                                        title: "圖片上傳發生錯誤",
+                                        icon: "error"
+                                    });
+                                }
+                            });
+                        } else {
+                            // 沒有選擇圖片時的提示
+                            Swal.fire({
+                                title: "請選擇圖片檔案",
+                                icon: "warning"
+                            });
+                        }
+                    }
+                });
+            } else {
+                Swal.fire({
+                    title: "欄位尚未填寫正確。",
+                    icon: "warning"
+                });
+            }
+        });
+
+
+        // 讀取商品資料
+        $.ajax({
+            type: "GET",
+            url: "Product_Read.php",
+            dataType: "json",
+            success: product_show,
+            async: false,
+            error: function () {
+                alert("error-Product_Read.php");
+            }
+        });
+
+        //產品分頁
+        function product_show(data) {
+            console.log(data);
+            // //重構data 產生newdata
+            data.data.forEach(function (item, key) {
+                if (key % 10 == 0) {
+                    newdata.push([]);
+                }
+                var page = parseInt(key / 10);
+                newdata[page].push(item);
+
+            });
+            console.log(newdata);
+
+            drawTable(0);
+        }
+
+        //會員渲染
+        function drawTable(page) {
+            $("#datalist").empty();
+            newdata[page].forEach(function (item) {
+                if (item.state == 1) {
+                    myswitch = '<div class="form-check form-switch"><input type="checkbox" name="switch01" id="switch01" class="form-check-input" checked data-id="' + item.id + '"><label for="" class="form-check-label">啟用</label></div>';
+                } else {
+                    myswitch = '<div class="form-check form-switch"><input type="checkbox" name="switch01" id="switch01" class="form-check-input"  data-id="' + item.id + '"><label for="" class="form-check-label">停權</label></div>';
+                }
+
+
+                var strHTML = ' <tr><td data-th="產品編號"><span class="table-col">' + item.productId + '</span></td><td data-th="產品名稱"><span class="table-col">' + item.productName + '</span></td><td data-th="產品圖片"><span class="table-col"><img src="' + item.photo + '" width="80px"height="80px"></span></td><td data-th="產品顏色"><span class="table-col">' + item.color + '</span></td><td data-th="庫存數量"><span class="table-col">' + item.num + '</span></td><td data-th="產品價格"><span class="table-col">' + item.price + '</span></td><td>' + myswitch + '</td><td><button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateModal"data-id="' + item.id + '"data-productName="' + item.productName + '"data-photo="' + item.photo + '"data-color="' + item.color + '" data-num="' + item.num + '" data-price="' + item.price + '"id="btn_update">更新</button></td></tr>';
+
+                $("#datalist").append(strHTML);
+            });
+            //產生頁碼
+
+            $("#pageList").empty();
+            for (var i = 0; i < newdata.length; i++) {
+                var thispage = i + 1;
+                var strHTML;
+                if (thispage == page + 1) {
+                    strHTML = '<li class="page-item active" onclick="drawTable(' + (thispage - 1) + ')"><a class="page-link" href="#">' + thispage + '</a></li>';
+                } else {
+                    strHTML = '<li class="page-item" onclick="drawTable(' + (thispage - 1) + ')"><a class="page-link" href="#">' + thispage + '</a></li>';
+                }
+
+
+                $("#pageList").append(strHTML);
+            }
+
+
+            //會員狀態switch監聽  上架:綠色 下架:紅色
+            $("#datalist #switch01").change(function () {
+                console.log($(this).is(":checked"));
+                console.log($(this).data("id"));
+                if ($(this).is(":checked")) {
+                    $(this).next().text("上架").removeClass("text-danger").addClass("text-success");
+                } else {
+                    $(this).next().text("下架").removeClass("text-success").addClass("text-danger");
+                }
+                //傳遞至後段API更新帳號狀態
+                //{"id":"48", "state": "0"}
+                var dataJSON = {};
+                var mystate = $(this).is(":checked") ? "1" : "0";
+
+                dataJSON["id"] = $(this).data("id");
+                dataJSON["state"] = mystate;
+                console.log(JSON.stringify(dataJSON));
+
+                $.ajax({
+                    type: "POST",
+                    url: "Product_Update_state_api.php",
+                    data: JSON.stringify(dataJSON),
+                    dataType: "json",
+                    success: showdata_Update_state,
+                    error: function () {
+                        alert("error-Product_Update_state_api.php");
+                    }
+                });
+            });
+            // 檢查switch的狀態,並設置初始顏色
+            $("#datalist #switch01").each(function () {
+                if ($(this).is(":checked")) {
+                    $(this).next().text("上架").removeClass("text-danger").addClass("text-success");
+                } else {
+                    $(this).next().text("下架").removeClass("text-success").addClass("text-danger");
+                }
+            });
+
+            // 監聽UpdateModal_ok_btn
+            $("#UpdateModal_ok_btn").click(function () {
+                if ($("#UpdateModal_productname").val() !== "" &&
+                    $("#UpdateModal_color").val() !== "" && $("#UpdateModal_num").val() !== "" &&
+                    $("#UpdateModal_price").val() !== "") {
+                    Swal.fire({
+                        title: "確認是否修改?",
+                        icon: "question",
+                        showCancelButton: true,
+                        confirmButtonColor: "#3085d6",
+                        cancelButtonColor: "#d33",
+                        confirmButtonText: "確認",
+                        cancelButtonText: "取消"
+                    }).then((result) => {
+                        if (result.isConfirmed) {
+                            // 取得檔案輸入欄位中的圖片檔案
+                            var file_input = $('#UpdateModal_photo');
+                            console.log(file_input.prop('files')); // 檢查是否有正確抓取到檔案資訊
+                            if (file_input.prop('files').length >= 0) {
+                                var file_data = file_input.prop('files')[0];
+                                console.log(file_data);
+                                var form_data = new FormData();
+                                form_data.append('file', file_data);
+
+                                // 上傳圖片檔案
+                                $.ajax({
+                                    url: 'Product_Uploadfile.php', // 圖片上傳 API
+                                    type: 'POST',
+                                    data: form_data,
+                                    contentType: false,
+                                    processData: false,
+                                    dataType: 'json',
+                                    success: function (response) {
+                                        if (response.state) {
+                                            // 圖片上傳成功，取得上傳後的圖片路徑
+                                            var photoPath = 'images_upload/' + response.dataInfo.儲存檔案名稱;
+
+                                            // 準備產品的 JSON 資料
+                                            var dataJSON = {};
+                                            u_id = $(this).data("id");
+                                            dataJSON["id"] = $("#UpdateModal_id").val();
+                                            dataJSON["productName"] = $("#UpdateModal_productname").val();
+                                            dataJSON["photo"] = photoPath; // 將圖片路徑放入 photo 欄位
+                                            dataJSON["color"] = $("#UpdateModal_color").val();
+                                            dataJSON["num"] = $("#UpdateModal_num").val();
+                                            dataJSON["price"] = $("#UpdateModal_price").val();
+                                            console.log(JSON.stringify(dataJSON));
+
+                                            // 上傳產品資料
+                                            $.ajax({
+                                                type: "POST",
+                                                url: "Product_Update.php",
+                                                data: JSON.stringify(dataJSON),
+                                                dataType: "json",
+                                                success: showdata_update,
+                                                error: function () {
+                                                    alert("error-Product_Update.php");
+                                                }
+                                            });
+                                        } else {
+                                            // 圖片上傳失敗時的提示
+                                            Swal.fire({
+                                                title: "圖片上傳失敗",
+                                                icon: "error",
+                                                text: response.message
+                                            });
+                                        }
+                                    },
+                                    error: function () {
+                                        // 圖片上傳請求失敗時的錯誤提示
+                                        Swal.fire({
+                                            title: "圖片上傳發生錯誤",
+                                            icon: "error"
+                                        });
+                                    }
+                                });
+                            } else {
+                                // 沒有選擇圖片時的提示
+                                Swal.fire({
+                                    title: "請選擇圖片檔案",
+                                    icon: "warning"
+                                });
+                            }
+                        }
+                    });
+                } else {
+                    Swal.fire({
+                        title: "欄位尚未填寫正確。",
+                        icon: "warning"
+                    });
+                }
+            });
+
+            //更新按鈕監聽
+            $("#datalist #btn_update").click(function () {
+                var photoPath = document.getElementById('photoPath');
+                console.log($(this).data("id"));
+                console.log($(this).data("productname"));
+                console.log($(this).data("photo"));
+                console.log($(this).data("color"));
+                console.log($(this).data("num"));
+                console.log($(this).data("price"));
+
+                $("#UpdateModal_id").val($(this).data("id"));
+                $("#UpdateModal_productname").val($(this).data("productname"));
+                $("#UpdateModal_color").val($(this).data("color"));
+                $("#UpdateModal_num").val($(this).data("num"));
+                $("#UpdateModal_price").val($(this).data("price"));
+                $("#UpdateModal_photo").val("");
+                photoPath.textContent = $(this).data("photo");
+                u_id = $(this).data("id");
+
+                $("#updateModal").modal('show');
+            });
+
+        }
+
+        function showFileName() {
+            var fileInput = document.getElementById('UpdateModal_photo');
+            var filePath = document.getElementById('photoPath');
+            if (fileInput.files && fileInput.files[0]) {
+                var fileName = fileInput.files[0].name;
+                filePath.textContent = fileName;
+            } else {
+                filePath.textContent = "未選擇檔案";
+            }
+        }
+
+
+
+        function showdata(data) {
+            if (data.state) {
+                Swal.fire({
+                    icon: "success",
+                    title: data.message,
+                    showDenyButton: false,
+                    showCancelButton: false
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        location.href = "product.html";
+                    }
+                });
+            } else {
+                Swal.fire({
+                    icon: "error",
+                    title: data.message
+                });
+            }
+        }
+
+        function showdata_Update_state(data) {
+            console.log(data);
+            if (data.state) {
+                alert(data.message);
+            } else {
+                alert(data.message);
+            }
+        }
+
+        function Product_Update(data) {
+            console.log(data);
+            if (data.state) {
+                alert(data.message);
+                location.reload();
+            } else {
+                alert(data.message);
+            }
+        }
+
+        function showdata_update(data) {
+            console.log(data);
+            if (data.state) {
+                alert(data.message);
+                location.href = "product.html"
+            } else {
+                alert(data.message);
+            }
+        }
+
+        // function showdata_check_uid(data) {
+        //     console.log(data);
+        //     if (data.state) {
+        //         if (data.data.Level == "900") {
+        //             //會員等級判斷為管理員
+
+        //             $("#member").removeClass("d-none");
+        //             //顯示帳號登入
+        //             $("#s02_login_username").text(data.data.Username);
+        //             //顯示登出帳號
+        //             $("#s02_logout_btn").removeClass("d-none");
+        //             //顯示登出按鈕
+        //             $("#s02_logout_btn").removeClass("d-none");
+
+
+        //             //讀取會員資料
+        //             $.ajax({
+        //                 type: "GET",
+        //                 url: "member-read-api.php",
+
+        //                 dataType: "json",
+        //                 success: showdata_read,
+        //                 error: function () {
+        //                     alert("error-member-read-api.php");
+        //                 }
+        //             });
+        //         } else {
+        //             //會員等級判斷不是管理員
+        //             alert("不是管理員");
+        //             location.href = "project-spa.html";
+
+        //         }
+        //     }
+
+        // }
+
+    </script>
+
+</body>
+
+</html>

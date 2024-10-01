@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>園桌武士</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myall.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/superfish.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all" />
+    <link type="text/css" href="css/jqueryui/jquery.ui.datepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/colours/green.css" type="text/css" media="all" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+        rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css' />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/myall.css?v=1.0">
+</head>
+
+<body>
+    <!-- BEGIN .wrapper -->
+    <div class="wrapper">
+
+        <!-- 上方登入資訊條 -->
+        <div class="topbar clearfix">
+
+            <!-- BEGIN .social-icons -->
+            <ul class="social-icons">
+                <li><a href="#"><span id="twitter_icon"></span></a></li>
+                <li><a href="#"><span id="facebook_icon"></span></a></li>
+                <li><a href="#"><span id="googleplus_icon"></span></a></li>
+                <li><a href="#"><span id="youtube_icon"></span></a></li>
+                <!-- END .social-icons -->
+            </ul>
+
+            <!-- BEGIN .topbar-right -->
+            <div class="topbar-right clearfix">
+                <ul class="clearfix">
+                    <span class=" fw-900 ms-3">當前會員:
+                        <span class="txt20 fw-900" id="s02_login_username" style="margin-right: 20px;">未登錄</span>
+                    </span>
+                    <!-- 移除了 button，將其功能轉移到 a 標籤 -->
+                    <li class="">
+                        <a href="checkout.html" data-bs-toggle="modal" data-bs-target="#loginModal" id="s02_login_btn"
+                            class="btn"> <span class="icon-placeholder"></span>登入</a>
+                    </li>
+                    <!-- 移除了 button，將其功能轉移到 a 標籤 -->
+                    <li class="">
+                        <a href="my-account.html" data-bs-toggle="modal" data-bs-target="#registerModal"
+                            id="s02_register_btn" class="btn">註冊</a>
+                    </li>
+                    <!-- 移除了 button，將其功能轉移到 a 標籤 -->
+                    <li class="">
+                        <a href="project-spa.html" id="s02_logout_btn" class="btn d-none">登出</a>
+                    </li>
+                    <li class="">
+                        <a href="my-member.html">個人訂單查詢</a>
+                    </li>
+                </ul>
+
+                <div class="cart-top" style="height: 50px;">
+                    <p><a href="cart.html" style="text-align: center;">購物車</a></p>
+                </div>
+                <!-- END .topbar-right -->
+            </div>
+
+            <!-- END .topbar -->
+        </div>
+
+        <!-- 大標題 園桌武士-->
+        <div id="s01" style="height:200px; display: flex; align-items: center; justify-content: center;"
+            class="topbar clearfix">
+            <h1 class="text-center align-content-center">
+                園桌武士 <span class="txt30">園藝造景工坊</span>
+            </h1>
+        </div>
+
+        <!-- 選單 -->
+        <div class="bg10" id="s02">
+            <div class="banner">
+                <nav class="bg20 mt-4" style="height:70px;">
+                    <ul>
+                        <li><a href="project-spa.html" class="bgbtn10">首頁</a></li>
+                        <li class="dropdown"><a href="" class="bgbtn10">燈飾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product-single1.html">燈飾1</a></li>
+                                <li><a href="product-single2.html">燈飾2</a></li>
+                                <li><a href="product-single3.html">燈飾3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="" class="bgbtn10">戶外桌椅</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product-single4.html">戶外桌椅1</a></li>
+                                <li><a href="product-single5.html">戶外桌椅2</a></li>
+                                <li><a href="product-single6.html">戶外桌椅3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="" class="bgbtn10">園藝植物</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="product-single7.html">園藝植物1</a></li>
+                                <li><a href="product-single8.html">園藝植物2</a></li>
+                                <li><a href="product-single9.html">園藝植物3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="project-aboutus.html" class="bgbtn10">關於我們</a></li>
+                        <li class="dropdown"><a href="" class="bgbtn10 d-none" id="member_manage">管理</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="member.html">會員管理</a></li>
+                                <li><a href="project-contact.html">產品管理</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- loginModal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header text-bg-warning">
+                        <h1 class="modal-title fs-5 fw-900 text-white" id="exampleModalLabel">會員登入</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="loginModal_username" class="form-label">帳號</label>
+                            <input type="text" name="loginModal_username" id="loginModal_username" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginModal_password" class="form-label">密碼</label>
+                            <input type="password" name="loginModal_password" id="loginModal_password"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" id="loginModal_ok_btn">確認</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- registerModal -->
+        <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <!-- header -->
+                    <div class="modal-header text-bg-success">
+                        <h1 class="modal-title fs-5 fw-900 text-white" id="exampleModalLabel">會員註冊</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- body -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>會員守則</h3>
+                                <h4>會員資格</h4>
+                                <ul>
+                                    <li>會員需年滿18歲，並同意遵守本守則。</li>
+                                </ul>
+                                <h4>會員權利</h4>
+                                <ul>
+                                    <li>會員享有參加活動、使用設施、及享受優惠的權利。</li>
+                                </ul>
+                                <h4>會員義務</h4>
+                                <ul>
+                                    <li>會員需遵守設施使用規定，愛護公共財物，並保持場所整潔。</li>
+                                </ul>
+                                <h4>會員行為</h4>
+                                <ul>
+                                    <li>會員需尊重其他會員及工作人員，不得有不當行為。</li>
+                                </ul>
+                                <h4>終止會員資格</h4>
+                                <ul>
+                                    <li>違反守則者，經警告後仍未改善，將取消會員資格。</li>
+                                </ul>
+                                <div class="form-check">
+                                    <input type="checkbox" name="registerModal_chk" id="registerModal_chk"
+                                        class="form-check-input is-invalid">
+                                    <label for="registerModal_chk" class="form-check-label">同意</label>
+                                    <div class="valid-feedback">同意遵守規定</div>
+                                    <div class="invalid-feedback">不同意遵守規定</div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="mb-3">
+                                    <label for="registerModal_username" class="form-label">帳號</label>
+                                    <input type="text" name="registerModal_username" id="registerModal_username"
+                                        class="form-control is-invalid" placeholder="字數3-8">
+                                    <div class="valid-feedback">符合規定</div>
+                                    <div class="invalid-feedback">不符合規定</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerModal_password" class="form-label">密碼</label>
+                                    <input type="password" name="registerModal_password" id="registerModal_password"
+                                        class="form-control is-invalid" placeholder="字數3-8">
+                                    <div class="valid-feedback">符合規定</div>
+                                    <div class="invalid-feedback">不符合規定</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerModal_re_password" class="form-label">確認密碼</label>
+                                    <input type="password" name="registerModal_re_password"
+                                        id="registerModal_re_password" class="form-control is-invalid"
+                                        placeholder="確認密碼">
+                                    <div class="valid-feedback">符合規定</div>
+                                    <div class="invalid-feedback">不符合規定</div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerModal_email" class="form-label">email</label>
+                                    <input type="email" name="registerModal_email" id="registerModal_email"
+                                        class="form-control is-invalid" placeholder="字數3-15">
+                                    <div class="valid-feedback">符合規定</div>
+                                    <div class="invalid-feedback">不符合規定</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" id="registerModal_ok_btn">確認</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 以上所有分頁通用 ----------------------------------------------------------------------------------------------->
+
+
+
+        <!-- s03扉頁(橫移) -->
+        <section id="s03">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"
+                        style="background-image: url(images/cover\ \(1\).jpg); height: 90vh; background-size: cover; background-position: 50% 30%;">
+                        <div class="carousel-caption p-3 rounded-2 shadow-lg d-none d-md-block"
+                            style="background-color: rgb(0, 0, 0, 0.4);">
+                            <h2>您的園藝專家</h2>
+                            <p>用心打造夢想中的花園
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-cover"
+                        style="background-image: url(images/cover\ \(2\).jpg); height: 90vh; background-size: cover; background-position: 50% 30%;">
+                        <div class="carousel-caption p-3 rounded-2 shadow-lg d-none d-md-block"
+                            style="background-color: rgb(0, 0, 0, 0.4);">
+                            <h2>您的園藝專家</h2>
+                            <p>最多樣的植栽選擇
+                            </p>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-cover"
+                        style="background-image: url(images/cover\ \(3\).jpg); height: 90vh; background-size: cover; background-position: 50% 30%;">
+                        <div class="carousel-caption p-3 rounded-2 shadow-lg d-none d-md-block"
+                            style="background-color: rgb(0, 0, 0, 0.4);">
+                            <h2>您的園藝專家</h2>
+                            <p>精緻樣品模板與客製
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- s04 歡迎來到圓桌武士!-->
+        <section class="about-us py-5 justify-content-center bft" id="s04" style="height: auto">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-6 animate__animated">
+                        <h2 class="display-5 text-center mt-5 txt20 fw-700 mb-5">歡迎來到園桌武士!</h2>
+                        <h2 class="display-5 text-center mt-5 txt20 fw-700 mb-5">您的專屬園藝用品專家</h2>
+
+                        <p class="h5 text-center mt-3  mb-5">
+                            在這個快節奏的時代，與大自然接觸變得愈加重要，而園藝不僅是放鬆身心的最佳方式，更是我們與土地重新連結的橋樑。在園桌武士，我們秉持著對園藝的熱愛，致力於為每位喜愛園藝的朋友提供最優質的工具與服務，幫助您將每一片土地都變成充滿生機的綠洲。
+
+                            無論您是園藝新手還是有多年經驗的專業園藝師，我們的園藝用品能滿
+                            足您的所有需求。我們的產品範圍涵蓋了從基礎工具到高端設備，從花園修剪到庭院裝飾，我們確保每一款商品都經過精挑細選，品質經得起時間的考驗。
+
+
+                        </p>
+                        <p class="h5 text-center mt-3  mb-5">
+                            我們深信，優質的園藝體驗應該從選購正確的工具開始。因此，園桌武士不僅提供專業園藝工具，我們的團隊也樂於分享知識，為您解答在園藝過程中遇到的各種問題，無論是土壤選擇、植物搭配，還是季節性養護，我們都會陪伴您走過每一步。
+
+                            來到園桌武士，您不僅是購物，更是加入了一個充滿熱情與創造力的園藝社群。在這裡，我們鼓勵每一位愛好者分享自己的園藝故事與心得，讓我們一起創造更多美麗的庭園與陽台綠洲。
+
+                            感謝您的光臨，讓我們一起從今天開始，揮舞園藝工具，耕耘屬於您的美麗世界！
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- s05 品牌 -->
+        <section class=" my-5 py-5 justify-content-center bft" id="s05" style="height: auto">
+            <div class="container">
+                <h2 class="display-5 text-center my-5 txt20 fw-700 mb-5">品牌</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 style="font-weight: bold;">藝術園藝燈具</h3>
+                        <h3>点亮花園藝術氣息</h3>
+                        <p>我們的裝置藝術園藝燈具不僅是光源，更是一種藝術表現。每款燈具設計皆源自於大自然的靈感，既能美化您的戶外空間，又兼具實用性。無論是懸掛式、地插式或牆壁安裝，每個燈具都經過精心設計，結合了耐候材料與節能LED技術，適合各種天氣環境。在夜晚，這些燈具不僅為您的花園帶來柔和的光亮，還能成為吸引眼球的藝術裝置，賦予戶外空間獨特的個性。
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 style="font-weight: bold;">戶外桌椅組</h3>
+                        <h3>功能與舒適完美結合</h3>
+                        <p>無論您是在庭院舉辦家庭聚會，還是享受獨自的戶外時光，園桌武士的戶外桌椅組都能提供理想的解決方案。我們的桌椅組採用耐用的防水材質製成，能夠抵抗風吹日曬，同時確保長久的使用壽命。每一款設計都考慮了人體工學，確保您在戶外用餐或休閒時的舒適感。多種風格可供選擇，從簡約現代到經典復古，總有一款適合您的戶外空間。
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 style="font-weight: bold;">園藝植物</h3>
+                        <h3>充滿生機的綠色空間</h3>
+                        <p>園藝植物是您花園的靈魂，我們為您提供多樣化的優質植物，無論您是種植盆栽還是打造大片花圃，都能找到適合的選擇。從耐旱的多肉植物到充滿異國風情的熱帶植被，我們的植物經過專業培育，確保適應各種氣候條件。我們也為每款植物提供詳細的養護指南，幫助您輕鬆打造出繁茂、充滿生命力的戶外綠洲。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- *************s04 戰績展示 (下方暫時隱藏這段的js 不然會影響登入)*************************** -->
+        <section id="s04special" class="d-none">
+            <div class="container-fluid"><!-- 加fluid就是滿版 -->
+                <div class="row align-items-center">
+                    <div class="col-md-5 bgcover wow animate__fadeIn" data-wow-duration="1s" data-wow-dalay="0s"
+                        data-wow-iteration="1"
+                        style="background-image: url(images/scen2.jpg); height:400px; background-attachment: fixed;">
+                    </div>
+
+                    <div class="col-md-7 p-5">
+                        <h1>成立於2077年<span class="text-success">全球第一家</span></h1>
+                        <h1>獨樹一格</h1>
+                        <p class="mb-1 h3 txt60">超美</p>
+                        <p class="mb-1 offset-3 h3 txt60">超優質</p>
+                        <p class="mb-1 offset-6 h3 txt60">超划算</p>
+                        <!-- 這一塊在搞 -->
+                        <div class="row mt-3">
+                            <div class="col-3">
+                                <h4 class="h4">房間總數</h4>
+                                <h2 class="counter01">87 <span class="h4 ">/間</span></h2>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="h4">平均每晚</h4>
+                                <h2 class="counter02">888 <span class="h4">/元</span></h2>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="h4">宴客廳</h4>
+                                <h2 class="counter03">66 <span class="h4">/場</span></h2>
+                            </div>
+                            <div class="col-3">
+                                <h4 class="h4">回頭率</h4>
+                                <h2 class="counter04">0<span class="h4">/%</span></h2>
+                            </div>
+                        </div>
+                        <!-- 這一塊在搞 -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- s06 歷史 -->
+        <div class="row">
+            <div class="h3 display-5 text-center fw-700">歷史</div>
+        </div>
+        <section class="my-5 ms-5" id="s06" style="position: relative;">
+            <div class="row ">
+                <div class="col-md-5 bgcover  animate__animated "
+                    style="position: absolute; background-image: url(images/history.jpg); top: 0; bottom: 0;">
+                </div>
+            </div>
+            <div class="row">
+                <div class="row justify-content-end ">
+                    <div class="col-md-7 my-5 s06_text animate__animated">
+                        <p class="h6">
+                            在遙遠的過去，這個鄉村海岸小店還只是一片荒涼的海邊，無人問津。據當地傳說，這片土地最早的居民是一群航海者。他們在一次暴風雨中迷失了方向，最終被海浪推到了這個小店的岸邊。當時，這裡充滿了茂密的樹林和豐富的自然資源，適合生存和發展。這些航海者決定在此定居，開始了新的生活。
+
+                            隨著時間的推移，這個小店慢慢發展起來，漁業成為了主要的經濟來源。由於靠近豐饒的漁場，鎮上的居民不僅能養活自己，還能將漁獲運往附近的城市出售，逐漸積累了財富。小店的名聲因此傳開，吸引了更多的人前來定居，鎮子也變得越來越繁榮。
+                        </p>
+                        <button class="btn btn-outline-info btn-light mt-3"> 查看更多</button>
+
+                        <div class="row mt-5">
+                            <div class="col-md-6">
+                                <div class="h3">蛻變</div>
+                                <p class="h6">
+                                    在19世紀末期，小店迎來了重要的轉折點。一位來自遠方的探險家在此地發現了豐富的礦藏，這一消息迅速傳開，吸引了大批淘金者和商人湧入。他們帶來了先進的技術和資本，使得小店經歷了一次快速的經濟增長。新的建築拔地而起，商業活動蓬勃發展，小店逐漸成為當地的重要商貿中心。
+
+                                    然而，小店的發展並非一帆風順。20世紀初，一場突如其來的地震摧毀了許多建築，鎮上的居民不得不面臨重建家園的艱難挑戰。但這次災難並未擊垮鎮民們的意志，他們齊心協力，重新建造了自己的家園，並利用災後的重建機會，進一步提升了小店的基礎設施。
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="h3">迄今</div>
+                                <p class="h6">
+                                    經過多年的發展，這個鄉村海岸小店已經成為了當地的旅遊勝地。遊客們被這裡的美麗風景和悠久歷史所吸引，紛紛前來探索小店的故事。如今，小店的居民依然保留著他們祖先的精神，熱情好客，努力將這片土地的美麗和故事分享給每一位來訪者。
+
+                                    無論是靜謐的海灘、古老的建築，還是那些代代相傳的歷史故事，這個鄉村海岸小店都充滿了令人著迷的魅力。來到這裡，您不僅能享受大自然的恩賜，還能感受到這片土地上流傳的悠久歷史和深厚文化。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- s07商品櫃展示板 -->
+        <section id="s07" style="margin-top: 7rem;">
+            <h2 class="display-5 text-center txt20 fw-700" style="margin-top: 7rem; margin-bottom: 7rem;">特色商品橱窗</h2>
+            <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner1" style="overflow-x: auto; white-space: nowrap; scroll-behavior: smooth;">
+                    <div class="carousel-item1 active">
+                        <img src="images_upload/20240919133234_plant2.png" class="img-fluid" alt="鍍金渡假村">
+
+                    </div>
+                    <div class="carousel-item1 active">
+                        <img src="images_upload/20240919133835_chair3.png" class="img-fluid" alt="度假村內吉祥物">
+
+                    </div>
+                    <div class="carousel-item1 active">
+                        <img src="images_upload/20240919070736_deborah-l-carlson-cf3YUv3ppFw-unsplash.jpg"
+                            class="img-fluid" alt="坐擁在地美景與地標的觀賞點位">
+
+                    </div>
+                    <div class="carousel-item1 active">
+                        <img src="images_upload/20240919132129_lamp3.png" class="img-fluid" alt="鍍金渡假村">
+
+                    </div>
+                    <div class="carousel-item1 active">
+                        <img src="images/cozy.jpg" class="img-fluid" alt="度假村內吉祥物">
+
+                    </div>
+                    <div class="carousel-item1 active">
+                        <img src="images/hotelcover2.jpg" class="img-fluid" alt="坐擁在地美景與地標的觀賞點位">
+
+                    </div>
+                    <button class="carousel-control-prev1" type="button" data-bs-target="#carouselExampleCaptions2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next1" type="button" data-bs-target="#carouselExampleCaptions2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        </section>
+        <!-- s08 商品01 灯饰 -->
+        <section class="" id="s08" style=" margin-top: 7rem; ">
+            <div class="vertical-element">
+                <div class="container-fluid px-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7">
+                            <div class="image-holder">
+                                <img src="images/eli-fur.jpg" class="img-fluid" alt="about-us">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="section-element p-5">
+                                <h2 class="h1 my-4">園藝燈飾</h2>
+                                <p class="my-4">内容简介</p>
+                                <ul class="mod-list">
+                                    <li>中式燈飾</li>
+                                    <li>簡約燈飾</li>
+                                    <li>古典燈飾</li>
+                                </ul>
+                                <a href="products.html"  class="btn btn-outline-dark rounded-pill px-5 py-3 mt-5 text-uppercase fs-6"><span>Shop
+                                        Now</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- s09 商品02 户外桌椅-->
+        <section class="" id="s09" style="margin-top: 5rem;">
+            <div class="vertical-element py-md-5">
+                <div class="container-fluid px-0 ">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-5">
+                            <div class="section-element p-5">
+                                <h2 class="h1 my-4">戶外桌椅</h2>
+                                <p class="my-4">内容简介</p>
+                                <ul class="mod-list">
+                                    <li>不鏽鋼桌椅組</li>
+                                    <li>戶外收納桌椅組</li>
+                                    <li>戶外實木桌椅組</li>
+                                </ul>
+                                <a  href="products.html"  class="btn btn-outline-dark rounded-pill px-5 py-3 mt-5 text-uppercase fs-6"><span>Shop
+                                        Now</span></a>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="image-holder text-right">
+                                <img src="images/slide1.jpg" class="img-fluid" alt="about-us"
+                                    style="position: relative;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- s10 商品03 园艺用品-->
+        <section class="" id="s10" style="margin-top: 5rem; margin-bottom: 7rem; ">
+            <div class="vertical-element">
+                <div class="container-fluid px-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7">
+                            <div class="image-holder">
+                                <img src="images/slide2.jpg" class="img-fluid" alt="about-us">
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="section-element p-5">
+                                <h2 class="h1 my-4">園藝用品</h2>
+                                <p class="my-4">内容简介</p>
+                                <ul class="mod-list">
+                                    <li>簡易植栽</li>
+                                    <li>辦公盆景</li>
+                                    <li>懶人室內盆景</li>
+                                </ul>
+                                <a href="products.html" class="btn btn-outline-dark rounded-pill px-5 py-3 mt-5 text-uppercase fs-6">
+                                    <span>Shop Now</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- s11 样品屋展示 -->
+        <section class="swiper-container2 position-relative" id="s11">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                    style="background-image: url('images/yard\ \(1\).jpg'); background-position: center center; height: 900px; background-size: cover;  background-repeat: no-repeat;"
+                    style="height: 100%;">
+                </div>
+                <div class="swiper-slide"
+                    style="background-image: url('images/yard\ \(2\).jpg'); background-position: center center; height: 900px; background-size: cover;  background-repeat: no-repeat;"
+                    style="height: 100%;">
+                </div>
+                <div class="swiper-slide"
+                    style="background-image: url('images/yard\ \(3\).jpg'); background-position: center center; height: 900px; background-size: cover;  background-repeat: no-repeat; "
+                    style="height: 100%;">
+                </div>
+                <div class="swiper-slide"
+                    style="background-image: url('images/yard\ \(4\).jpg'); background-position: center center; height: 900px; background-size: cover;  background-repeat: no-repeat; "
+                    style="height: 100%;">
+                </div>
+            </div>
+            <!-- 将文字放在轮播容器之外，避免被轮播动画影响 -->
+            <div class="position-absolute w-100 h-100 d-flex align-items-center justify-content-center text-white text-center"
+                style="top: 0; left: 0; z-index: 10;">
+                <div style="transform: translateY(60%);text-shadow: 2px 2px 4px #000000;">
+                    <h1 class="display-1 text-light">夢中情園 為您打造</h1>
+                    <div class="breadcrumb d-flex justify-content-center">
+                        <span class="item">到府裝修</span>
+                        <span>/</span>
+                        <span class="item">盡善盡美</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- *************s12 销售量圖表*************************** -->
+        <section id="s12" class="my-5">
+            <div class="container">
+                <div class="row" style="display: flex;">
+                    <div class="col-6" style="flex: 1; display: flex; flex-direction: column; gap: 20px;">
+                        <div class="card">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                        <div class="card">
+                            <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+                    <div class="col-6" style="flex: 1; display: flex; height: auto;">
+                        <div class="card" style="flex: 1;">
+                            <canvas id="myChart3"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- *************s13 來電體驗*************************** -->
+        <section id="s13" style="height: auto;">
+            <div class="container s05_text mt-2"
+                style="background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/cozy3.jpg); background-size: cover; background-position: center center; background-attachment: fixed; padding: 40px; min-height: 500px;">
+                <div class="row align-items-center ">
+                    <div class="col-md-4 text-white  ">
+                        <p class="h4">
+                            當您漫步於繁忙都市的喧囂之中，是否曾渴望一縷綠意與寧靜？「「園桌武士」，一家專注於園藝精品的工坊，正是您尋找的理想棲息地。我們承諾為您打造一個夢想中的綠洲，讓您在繁忙生活中也能享受大自然的撫慰。
+
+                            「「園桌武士」不僅僅是一家店，它是一個理念，一種對美好生活的追求。我們的團隊由一群熱愛園藝的工匠組成，他們用心雕琢每一件作品，從燈飾到戶外桌椅，從園藝植物到裝飾小品，每一件都是對自然美的致敬。我們相信，好的園藝設計不僅能美化空間，更能喚醒人們對生活的熱愛。
+                        </p>
+                    </div>
+                    <div class="col-md-8 text-white">
+                        <p class="h5">
+                            我們的產品選材講求可持續與環保，每一件產品都是對地球的一點點回饋。我們的設計理念是「簡約而不簡單」，讓每一件作品都能融入您的生活，成為您日常的一部分。無論是家庭花園，還是商業空間，「「園桌武士」都能為您提供專業的園藝解決方案。
+                        </p>
+                        <p class="h5">
+                            在「「園桌武士」，我們提供一站式的購物體驗。從產品選擇到客服服務，我們都力求完美，讓您的每一次購物都是一次愉快的旅程。我們的網站設計簡潔大方，讓您輕鬆瀏覽，輕松購物。無論您身在何處，只要輕點滑鼠，我們的園藝精品就能送達您的手中。
+                        </p>
+                        <p class="h5">
+                            「園桌武士」，不僅是一個品牌，它是一種生活態度，一種對美好生活的追求。我們邀請您一起加入這場園藝的革命，讓我們共同創造一個更加綠意盎然的世界。立即訪問我們的網站，探索更多園藝的美好，讓「「園桌武士」成為您生活中的一抹亮色。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- *************s043貓貓老闆*************************** -->
+        <section id="s07" class="d-none">
+            <div class="container s043_text"
+                style="position: relative; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/scen1.jpg);">
+                <div class="row ">
+                    <div class="col-md-7 ">
+                        <div class="h3">老板的小秘密</div>
+                        <p>这是一只猫猫，是我们老板
+                        </p>
+                        <button class="btn btn-outline-info"> 查看更多</button>
+                        <div class="row mt-5">
+                            <div class="col-md-6">
+                                <div class="h3">吉祥物</div>
+                                <p>自開業之初便存在的貓貓老闆，陪伴我們度過無數悲歡離合
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="h3">貓貓老闆的出現位置</div>
+                                <p>你可以在度假村中任何地方偶遇貓貓老闆。但牠最常出現在旅店中的餐廳與廚房附近
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="box01 boc_img bgcover s043_text align-items-center align-content-center"
+                            style="position: absolute; background-image: url(images/hotelboss.jpg); height: 260px; width: 30%;">
+                            <div class="roller">
+                                <button class="btn btn-dark">查看更多</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row justify-content-end ">
+
+            </div>
+        </section>
+        <!-- *************s06 禮品贈送*************************** -->
+        <section id="s06" class="bg-gradient ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center mt-4 mb-3">
+                        <i class="fa-solid fa-gift fa-3x text-danger mb-3"></i>
+                        <h3 class="fw-600 wow animate__shakeY " data-wow-duration="3s" data-wow-delay="1s"
+                            data-wow-iteration="infinite">禮品贈送</h3>
+                        <p class="">消費即享精美禮品，用心挑選，為您的旅程增添一份驚喜與溫馨</p>
+                    </div>
+                    <div class="col-md-4 text-center mt-4 mb-3">
+                        <i class="fa-solid fa-gift fa-3x text-success mb-3"></i>
+                        <h3 class="fw-600 wow animate__shakeY " data-wow-duration="3s" data-wow-delay="1s"
+                            data-wow-iteration="infinite">優惠折扣</h3>
+                        <p class="">限時優惠，驚喜折扣，讓您以最划算的價格體驗超值享受</p>
+                    </div>
+                    <div class="col-md-4 text-center mt-4 mb-3">
+                        <i class="fa-solid fa-gift fa-3x text-warning mb-3"></i>
+                        <h3 class="fw-600 wow animate__shakeY " data-wow-duration="3s" data-wow-delay="1s"
+                            data-wow-iteration="infinite">會員優惠</h3>
+                        <p class="">加入會員，尊享專屬禮遇，優惠不斷，積分兌換更多精彩禮品</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- *************s08 設施*************************** -->
+        <section id="s08" class="mt-5 d-none">
+            <div class="container py-4">
+                <div class="h1 fw-600 text-center text-muted">主題特色</div>
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-bell-concierge fa-6x text-dark me-4 txt40"></i>
+                        </div>
+                        <div>
+                            <div class="h3">餐飲</div>
+                            <p>精緻料理，融合當地風味，滿足味蕾的饗宴，讓每一餐都成為難忘的美味回憶
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hot-tub-person fa-6x text-dark me-4 txt40"></i>
+                        </div>
+                        <div>
+                            <div class="h3">溫泉</div>
+                            <p>天然溫泉，泡湯舒緩身心，享受悠閒片刻，讓您徹底放鬆、恢復活力。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-dumbbell fa-6x text-dark me-4 txt40"></i>
+                        </div>
+                        <div>
+                            <div class="h3">健身房</div>
+                            <p>現代化健身設施，助您在旅途中保持健康體態，隨時隨地激發活力。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex">
+                            <i class="fa-solid  fa-monument fa-6x text-dark me-4 txt40"></i>
+                        </div>
+                        <div>
+                            <div class="h3">地標</div>
+                            <p>座落於景區核心地帶，享絕佳視野與便捷交通，探索城市風貌的完美起點。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- *************s10估狗地圖*************************** -->
+        <section class="s10 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14560.36698157267!2d120.60848265!3d24.168514999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e1e5070a7a7%3A0xa462167a0845084d!2z6Lev5oCd576p5pWZ5aCC!5e0!3m2!1szh-TW!2stw!4v1722912732910!5m2!1szh-TW!2stw"
+                            width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label for="" class="form-label">name</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">tel</label>
+                            <input type="tel" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">people</label>
+                            <input type="number" class="form-control">
+                        </div>
+                        <button class="btn w-100 mt-3">取消</button>
+                        <button class="btn w-100 mt-3">确认</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- *************s11 徵才*************************** -->
+        <section id="s11" class="mt-5">
+            <div class="container-fluid bgcover"
+                style="background-image: url(images/welcome.jpg); height: 300px; background-position: 0% 0%;">
+
+                <div class="row ">
+                    <div class="col-md-6">
+                        <div class="row align-items-center mt-3 ms-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-7 text-light mt-2">
+                                <!-- <small class="text-white fw-600">加入我们</small> -->
+                                <div class="h2 text-light fw-900">誠徵夥伴</div>
+                                <p class="h6">我們正在尋找有熱情、有創意的專業人才，與我們一起推動創新與成長。如果你擁有相關經驗，並且渴望挑戰自我，我們期待你的加入！
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ">
+                        <div class="row align-items-center mt-3 ms-2">
+                            <div class="col-md-1"></div>
+                            <div class="col-7 text-light">
+                                <!-- <small class="text-white fw-600">加入我们</small> -->
+                                <p class="h6 my-3">專業知識和技能</p>
+                                <p class="h6 my-3">良好的團隊合作精神</p>
+                                <p class="h6 my-3">卓越的溝通能力</p>
+                                <a href="#" class="bgbtn10 btn-outline-warning my-1">详细资料</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- *************s12*************************** -->
+        <section id="s12">
+            <div class="container">
+                <div class="nav"></div>
+            </div>
+        </section>
+
+        <!-- *************s13 停權帳號警告畫片*************************** -->
+        <section id="s13" class="d-none">
+            <div class="container">
+                <div class="row align-items-center min-vh-100">
+                    <div class="display-1 fw-900 text-danger text-center">
+                        你的帳號已經被停權了!
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- *************footer*************************** -->
+        <footer class="main-footer" id="s13">
+            <div class="container">
+                <div class="footer-item">
+                    <h4>園桌武士</h4>
+                    <nav>
+                        <a href="project-spa.html"><i class="fa fa-angle-right"></i> 首頁 </a>
+                        <a href="project-aboutus.html"><i class="fa fa-angle-right"></i> 關於我們</a>
+                        <a href="project-contact.html"><i class="fa fa-angle-right"></i> 聯繫方式</a>
+                    </nav>
+                </div>
+
+                <div class="footer-item">
+                    <h4>燈飾</h4>
+                    <nav>
+                        <a href="product-single1.html"><i class="fa fa-angle-right"></i>中式燈飾</a>
+                        <a href="product-single2.html"><i class="fa fa-angle-right"></i>簡約燈飾</a>
+                        <a href="product-single3.html"><i class="fa fa-angle-right"></i>古典燈飾</a>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <h4>戶外桌椅組</h4>
+                    <nav>
+                        <a href="product-single4.html"><i class="fa fa-angle-right"></i>不鏽鋼桌椅組</a>
+                        <a href="product-single5.html"><i class="fa fa-angle-right"></i>戶外收納桌椅組</a>
+                        <a href="product-single6.html"><i class="fa fa-angle-right"></i>戶外實木桌椅組</a>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <h4>園藝植栽</h4>
+                    <nav>
+                        <a href="product-single7.html"><i class="fa fa-angle-right"></i>簡易植栽</a>
+                        <a href="product-single8.html"><i class="fa fa-angle-right"></i>辦公盆景</a>
+                        <a href="product-single9.html"><i class="fa fa-angle-right"></i>懶人室內盆景</a>
+                    </nav>
+                </div>
+                <div class="footer-item">
+                    <h4>後台管理</h4>
+                    <nav>
+                        <a href="member.html"><i class="fa fa-angle-right"></i> 會員管理</a>
+                        <a href="product.html"><i class="fa fa-angle-right"></i> 產品管理</a>
+                        <a href="car-manage.html"><i class="fa fa-angle-right"></i> 購物車管理</a>
+                    </nav>
+                </div>
+                <div class="footer-item footer-subs mt-3">
+                    <h4>訂閱電子報</h4>
+                    <form>
+                        <input type="text" name="">
+                        <input type="submit" value="訂閱" class="subscribe-btn">
+                    </form>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            Copyright &copy; 2024 雲端班製作
+        </div>
+    </div>
+
+
+
+
+
+    <!--JavaScript-->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var flag_username = false;
+        var flag_password = false;
+        var flag_re_password = false;
+        var flag_email = false;
+        var flag_chk = false;
+
+
+        $(function () {
+            // //wow
+            // new WOW().init();
+            // //counter up
+            // //数字跳动
+            // const counterUp = window.counterUp.default
+
+            // const callback = entries => {
+            //     entries.forEach(entry => {
+            //         const el = entry.target
+            //         if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+            //             counterUp(el, {
+            //                 duration: 2000,
+            //                 delay: 16,
+            //             })
+            //             el.classList.add('is-visible')
+            //         }
+            //     })
+            // }
+            // //这两行是重点
+            // const IO = new IntersectionObserver(callback, { threshold: 1 })
+
+            // const el01 = document.querySelector('.counter01')
+            // IO.observe(el01)
+
+            // const el02 = document.querySelector('.counter02')
+            // IO.observe(el02)
+
+            // const el03 = document.querySelector('.counter03')
+            // IO.observe(el03)
+
+            // const el04 = document.querySelector('.counter04')
+            // IO.observe(el04)
+
+            //確認uid是否存在且合法
+            if (getCookie("Uid01") != "") {
+                //將uid01傳遞至後端api確認是否合法
+                var dataJSON = {};
+                dataJSON["Uid01"] = getCookie("Uid01");
+                console.log(JSON.stringify(dataJSON));
+
+                $.ajax({
+                    type: "POST",
+                    url: "uid-check-api.php",
+                    data: JSON.stringify(dataJSON),
+                    dataType: "json",
+                    success: showdata_check_uid,
+                    error: function () {
+                        alert("error-uid-check-api.php");
+                    }
+                });
+            } else {
+                // alert("尚未登入，請登入使用附加功能");
+                // // location.href = "project-spa.html";
+            }
+
+
+
+            // 註冊功能
+
+            // 監聽username
+            $("#registerModal_username").bind("input propertychange", function () {
+                if ($(this).val().length > 2 && $(this).val().length < 9) {
+
+                    var dataJSON = {};
+                    dataJSON["username"] = $("#registerModal_username").val();
+                    console.log(JSON.stringify(dataJSON));
+                    //傳送至後端API\
+
+                    $.ajax({
+                        type: "POST",
+                        url: "member-check-api.php",
+                        data: JSON.stringify(dataJSON),
+                        dataType: "json",
+                        success: showdata_checkuni,
+                        error: function () {
+                            alert("error-member-check-api.php");
+                        }
+                    });
+                } else {
+                    // 不符合規定
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_username = false;
+                }
+            });
+
+            // 監聽password
+            $("#registerModal_password").bind("input propertychange", function () {
+                if ($(this).val().length > 2 && $(this).val().length < 9) {
+                    // 符合規定
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_password = true;
+                } else {
+                    // 不符合規定
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_password = false;
+                }
+
+                if ($(this).val() !== $("#registerModal_re_password").val()) {
+
+                    $("#registerModal_re_password").removeClass("is-valid");
+                    $("#registerModal_re_password").addClass("is-invalid");
+                    flag_re_password = false;
+                }
+                if ($(this).val() == $("#registerModal_re_password").val()) {
+
+                    $("#registerModal_re_password").removeClass("is-invalid");
+                    $("#registerModal_re_password").addClass("is-valid");
+                    flag_re_password = true;
+                }
+            });
+
+            //監聽registerModal_re_password
+            $("#registerModal_re_password").bind("input propertychange", function () {
+                if ($(this).val() == $("#registerModal_password").val()) {
+                    //符合規定
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_re_password = true;
+                } else {
+                    //不符合規定
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_re_password = false;
+                }
+            });
+
+            //監聽username
+            $("#registerModal_email").bind("input propertychange", function () {
+                if ($(this).val().length > 2 && $(this).val().length < 16) {
+                    //符合規定
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_email = true;
+                } else {
+                    //不符合規定
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_email = false;
+                }
+            });
+
+            //同意按鈕
+            $("#registerModal_chk").change(function () {
+                if ($(this).is(":checked")) {
+                    //打勾 
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flag_chk = true;
+                } else {
+                    //未打勾
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flag_chk = false;
+                }
+            });
+
+            //註冊按鈕監聽
+            $("#registerModal_ok_btn").click(function () {
+                if (flag_username && flag_password && flag_re_password && flag_email && flag_chk) {
+
+                    var dataJSON = {};
+                    dataJSON["username"] = $("#registerModal_username").val();
+                    dataJSON["password"] = $("#registerModal_password").val();
+                    dataJSON["email"] = $("#registerModal_email").val();
+
+                    console.log(JSON.stringify(dataJSON));
+
+                    $.ajax({
+                        type: "POST",
+                        url: "member-create-api.php",
+                        data: JSON.stringify(dataJSON),
+                        contentType: "application/json", // 添加這一行
+                        dataType: "json",
+                        success: showdata_register,
+                        error: function (xhr, status, error) {
+                            console.error("AJAX Error: " + status + " - " + error);
+                            alert("Error: " + error);
+                        }
+                    });
+
+                } else {
+                    // alert("欄位有錯請修正!");
+                    if (flag_chk == false) {
+                        Swal.fire({
+                            title: "請按同意!",
+                            showDenyButton: false,
+                            showCancelButton: false,
+                            confirmButtonText: "確認",
+                            denyButtonText: `Don't save`
+                        }).then((result) => {
+                            /* Read more about isConfirmed, isDenied below */
+                            if (result.isConfirmed) {
+                                Swal.fire("確認", "", "success");
+                            } else if (result.isDenied) {
+                                Swal.fire("Changes are not saved", "", "info");
+                            }
+                        });
+                    }
+
+                }
+            });
+
+            //**********************************登入功能***********************************************
+            //登入按鈕監聽
+            $("#loginModal_ok_btn").click(function () {
+                if ($("#loginModal_username").val() != "" && $("#loginModal_password").val() != "") {
+                    //帳號密碼都有輸入
+                    //傳遞登入資料至後端API 執行登入行為
+                    //{"username":"owner01", "password":"123456"}
+                    var dataJSON = {};
+                    dataJSON["username"] = $("#loginModal_username").val();
+                    dataJSON["password"] = $("#loginModal_password").val();
+
+                    console.log(JSON.stringify(dataJSON));
+
+                    $.ajax({
+
+                        type: "POST",
+                        url: "member-login-api.php",
+                        data: JSON.stringify(dataJSON),
+                        dataType: "json",
+                        success: showdata_login,
+                        error: function () {
+                            alert("error-member-login-api.php");
+                        }
+                    });
+
+                } else {
+                    //帳號密碼都有空白欄位
+                    alert("帳號密碼有空白欄位");
+                }
+            });
+
+
+            //登出按鈕監聽
+            $("#s02_logout_btn").click(function () {
+                setCookie("Uid01", "", 7);
+                location.href = "project-spa.html";
+            });
+
+        }); //end fun
+
+        //註冊時檢測帳號是否重複
+        function showdata_checkuni(data) {
+            console.log(data);
+            if (data.state) {
+                $("#registerModal_username").removeClass("is-invalid");
+                $("#registerModal_username").addClass("is-valid");
+                flag_username = true;
+            } else {
+                $("#registerModal_username").removeClass("is-valid");
+                $("#registerModal_username").addClass("is-invalid");
+                flag_username = false;
+            }
+        }
+        //註冊function
+        function showdata_register(data) {
+            console.log(data);
+            if (data.state) {
+                alert(data.message);
+                location.href = "project-spa.html";
+            } else {
+                alert(data.message);
+            }
+        }
+        //登入function
+        function showdata_login(data) {
+            console.log(data);
+            if (data.state) {
+                if (data.data.State == "1") {
+                    alert(data.message);
+                    //loginModal隱藏
+                    $("#loginModal").modal("hide");
+                    //顯示登入帳號
+                    $("#s02_login_username").text();
+                    $("#s02_login_username").text(data.data.Username);
+                    //隱藏登入與註冊按鈕
+                    $("#s02_login_btn").addClass("d-none");
+                    $("#s02_register_btn").addClass("d-none");
+                    //顯示登出按鈕
+                    $("#s02_logout_btn").removeClass("d-none");
+                    $("member_manage").removeClass("d-none");
+
+
+                    // 顯示高級功能
+                    $("#s02btn01").removeClass("disabled");
+                    $("#s02btn02").removeClass("disabled");
+                    $("#s02btn03").removeClass("disabled");
+                    $("#s041").removeClass("d-none");
+                    $("#s042").removeClass("d-none");
+                } else {
+                    alert(data.message + "，你沒資格阿你沒資格!");
+                    //loginModal隱藏
+                    $("#loginModal").modal("hide");
+                    //顯示登入帳號
+                    $("#s02_login_username").text(data.data.Username);
+                    //隱藏登入與註冊按鈕
+                    $("#s02_login_btn").addClass("d-none");
+                    $("#s02_register_btn").addClass("d-none");
+                    //顯示登出按鈕
+                    $("#s02_logout_btn").removeClass("d-none");
+
+
+                }
+                setCookie("Uid01", data.data.Uid01, 7);
+            } else {
+                alert(data.message);
+            }
+        }
+        //uid檢測function
+        function showdata_check_uid(data) {
+            console.log(data);
+            if (data.state) {
+                if (data.data.State == "1") {
+                    // 更新用戶名稱
+                    $("#s02_login_username").text(data.data.Username);
+                    // 隱藏登入與註冊按鈕
+                    $("#s02_login_btn").addClass("d-none");
+                    $("#s02_register_btn").addClass("d-none");
+                    // 顯示登出按鈕
+                    $("#s02_logout_btn").removeClass("d-none");
+                    $("member_manage").removeClass("d-none");
+
+                    // 顯示vip高級功能
+                    $("#s02btn01").removeClass("disabled");
+                    $("#s02btn02").removeClass("disabled");
+                    $("#s02btn03").removeClass("disabled");
+                    $("#s041").removeClass("d-none");
+                    $("#s042").removeClass("d-none");
+                } else {
+                    alert(data.message + "，你沒資格阿你沒資格!");
+                    $("#s02_login_username").text(data.data.Username);
+                    // 隱藏登入與註冊按鈕
+                    $("#s02_login_btn").addClass("d-none");
+                    $("#s02_register_btn").addClass("d-none");
+                    // 顯示登出按鈕
+                    $("#s02_logout_btn").removeClass("d-none");
+
+                    //這裡不給顯示高級功能了
+
+                    //顯示停權警告畫面 s13
+                    $("#s13").removeClass("d-none");
+
+                }
+            }
+        }
+
+        // 以下是cookie都是网上搬来的， 不重要
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+    </script>
+
+    <script>
+        // 下方的轮播滑动按鈕事件
+        const carouselInner1 = document.querySelector('#carouselExampleCaptions2 .carousel-inner1');
+        document.querySelector('#carouselExampleCaptions2 .carousel-control-prev1').addEventListener('click', () => {
+            carouselInner1.scrollBy({ left: -carouselInner1.clientWidth * 0.7, behavior: 'smooth' });
+        });
+        document.querySelector('#carouselExampleCaptions2 .carousel-control-next1').addEventListener('click', () => {
+            carouselInner1.scrollBy({ left: carouselInner1.clientWidth * 0.7, behavior: 'smooth' });
+        });
+    </script>
+
+    <!-- 左右滑入動畫 -->
+    <script>
+        $(window).on('scroll', function () {
+            var sectionTop = $('#s06').offset().top; // 區塊的頂部位置
+            var windowHeight = $(window).height(); // 瀏覽器視窗高度
+            var scrollPos = $(this).scrollTop(); // 滾動的距離
+
+            // 如果滾動位置加上視窗高度超過區塊的位置，觸發動畫
+            if (scrollPos + windowHeight > sectionTop + 100) { // 調整觸發時間
+                $('.bgcover').css('opacity', '1').addClass('animate__slideInLeft animate__fadeIn');
+                $('.s06_text').css('opacity', '1').addClass('animate__slideInRight animate__fadeIn');
+            }
+        });
+    </script>
+    <!-- 轮播 -->
+    <script>
+        var swiper = new Swiper('.swiper-container2', {
+            loop: true,
+            autoplay: {
+                delay: 3500, // 轮播间隔时间
+            },
+            effect: 'fade', // 轮播效果
+            fadeEffect: {
+                crossFade: true
+            },
+            preloadImages: true, // 确保图片预加载
+            updateOnImagesReady: true // 当图片准备好时更新 Swiper
+        });
+    </script>
+    
+    <!-- 图表 -->
+    <script>
+        var productdata = [];
+        var regionTitle = [];
+        var counter = [];
+        var regionData = [];
+        var mychart;
+        // 從資料庫抓取的原始數據
+        const data = [
+            { Creat_at: "2024-09-19 22:45:41", Num: "3", Price: "4990", Product: "戶外收納桌椅組", State: "0", Username: "owner01", id: "14" },
+            { Creat_at: "2024-09-19 22:45:41", Num: "5", Price: "5000", Product: "簡約燈飾", State: "0", Username: "owner01", id: "13" },
+            { Creat_at: "2024-09-19 22:45:41", Num: "2", Price: "7000", Product: "古典燈飾", State: "0", Username: "owner01", id: "12" },
+            { Creat_at: "2024-09-19 22:45:45", Num: "3", Price: "4990", Product: "戶外收納桌椅組", State: "0", Username: "owner01", id: "17" },
+            { Creat_at: "2024-09-19 22:45:45", Num: "5", Price: "5000", Product: "簡約燈飾", State: "0", Username: "owner01", id: "16" },
+            { Creat_at: "2024-09-19 22:45:45", Num: "2", Price: "7000", Product: "古典燈飾", State: "0", Username: "owner01", id: "15" },
+            { Creat_at: "2024-09-19 22:51:27", Num: "5", Price: "5000", Product: "簡約燈飾", State: "0", Username: "owner01", id: "19" },
+            { Creat_at: "2024-09-19 22:51:27", Num: "2", Price: "7000", Product: "古典燈飾", State: "0", Username: "owner01", id: "18" },
+            { Creat_at: "2024-09-19 22:51:27", Num: "3", Price: "4990", Product: "戶外收納桌椅組", State: "0", Username: "owner01", id: "20" }
+        ];
+
+        // 1. 處理數據以獲取每個產品的總銷售數量
+        const productSales = {};
+        data.forEach(item => {
+            const product = item.Product;
+            const num = parseInt(item.Num);
+            if (productSales[product]) {
+                productSales[product] += num;
+            } else {
+                productSales[product] = num;
+            }
+        });
+
+        // 2. 準備 Chart.js 數據
+        const labels = Object.keys(productSales);
+        const salesData = Object.values(productSales);
+
+        // 3. 生成長條圖
+        const ctx1 = document.getElementById('myChart1').getContext('2d');
+        const myChart1 = new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: '銷量圖',
+                    data: salesData,
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // 3. 生成長條圖
+        const ctx2 = document.getElementById('myChart2').getContext('2d');
+        const myChart2 = new Chart(ctx2, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: '銷量圖',
+                    data: salesData,
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+
+        // 3. 生成長條圖
+        const ctx3 = document.getElementById('myChart3').getContext('2d');
+        const myChart3 = new Chart(ctx3, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: '銷量圖',
+                    data: salesData,
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

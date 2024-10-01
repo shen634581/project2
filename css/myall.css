@@ -1,0 +1,678 @@
+@font-face {
+    font-family: 'Gen Jyuu Gothic Monospace Regular';
+    src: url('/fonts/Gen Jyuu Gothic Monospace Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Gen Jyuu Gothic Monospace Regular', sans-serif !important;
+    font-optical-sizing: auto;
+}
+
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+h1, h2, h3, p {
+    font-family: 'Gen Jyuu Gothic Monospace Regular', sans-serif !important; /* 確保字體樣式被應用 */
+}
+
+/* 自訂預設顏色 */
+/* 色票 */
+:root {
+    --mycolor01: #ffffff;
+    --mycolor10: rgb(247, 243, 238);
+    --mycolor20: rgba(238, 167, 163, 0.708);
+    --mycolor30: rgb(50, 51, 80);
+    --mycolor40: rgb(247, 116, 69);
+    --mycolor50: rgba(53, 52, 48, 0.795);
+    --mycolor60: #f3c735;
+    --mycolor70: rgba(180, 235, 192, 0.708);
+    --mycolor71: rgb(153, 145, 118);
+
+    --mytextblack10: #131313;
+    --mytextgreen20: #80b600;
+    --mytextgray20: #696B69;
+    --mytextgray21: #C3C3C3;
+    
+    --bdrcolor20: #C3C3C3;
+}
+
+/* 快取顏色 */
+/* 基礎色 */
+.bg10 {
+    background-color: var(--mycolor10);
+}
+
+.bg20 {
+    background-color: var(--mycolor01);
+}
+
+.bg30 {
+    background-color: var(--mycolor30);
+}
+
+.bg40 {
+    background-color: var(--mycolor40);
+}
+
+.bg50 {
+    background-color: var(--mycolor50);
+}
+
+.bg60 {
+    background-color: var(--mycolor60);
+}
+
+.bg70 {
+    background-color: var(--mycolor70);
+}
+
+/* 文字 */
+.txt10 {
+    color: var(--mytextblack10);
+}
+
+.txt20 {
+    color: var(--mytextgreen20);
+}
+
+.txt30 {
+    color: var(--mytextgray21);    
+    font-size: 2.5rem; /* 根據需求調整字體大小 */
+    font-weight: bold; /* 根據需求調整字體粗細 */
+}
+
+.txt40 {
+    color: rgb(247, 116, 69) !important;
+}
+
+.txt60 {
+    color: #f3c735 !important;
+}
+
+h1 {
+    font-size: 3rem; /* 根據需求調整字體大小 */
+    font-weight: bold; /* 根據需求調整字體粗細 */
+    text-align: center; /* 確保文字居中對齊 */
+}
+
+
+/* 背景圖片變暗 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 黑色且50%透明 */
+    z-index: 1;
+}
+
+/* 常用模板 */
+/* 按鈕 */
+/* 按鈕一号 */
+.bgbtn10 {
+    display: inline-block; /* 或 block */
+    width: 95px;
+    height: 40px;
+    background-color: var(--mycolor01);
+    border-radius: 1px;
+    margin-right: 50px;
+    box-shadow: 0px 0px 1px 2px var(--bdrcolor20);
+    color: var(--mytextgray20);
+    font-size: 20px;
+    font-family: 'Gen Jyuu Gothic Monospace Regular', sans-serif !important; /* 設定字體 */
+    font-size: 18px; /* 設定字體大小 */
+    font-weight: bold; /* 設定字體加粗 */
+    text-align: center; /* 水平置中 */
+    padding: 10px; /* 設置與邊緣的距離 */
+    box-sizing: border-box; /* 確保 padding 不會影響 width 和 height */
+    line-height: 18px; /* 設置行高來讓文字垂直居中 */
+    text-decoration: none; /* 去掉鏈接下劃線 */
+    transition: background-color 0.5s ease,transform 0.3s ease;/* 渐变背景的过渡 */
+
+}
+
+.bgbtn10:hover {
+    background-color: var(--mycolor01);
+    transform: scale(1.2); /* 使用 scale 改變大小 */
+    border-radius: 1px;
+    box-shadow: 0px 0px 1px 3px var(--mycolor50);
+    color: var(--mytextgreen20);
+}
+
+/* 按鈕二号 下單購物*/
+.bgbtn20 {
+    display: inline-block; /* 或 block */
+    width: 150px;
+    height: 60px;
+    background-color: var(--mycolor01);
+    border-radius: 30px;
+    margin-right: 50px; /* 可以移除或调整这个值 */
+    /* box-shadow: 0px 0px 1px 2px var(--bdrcolor20); */
+    color: var(--mytextgray20);
+    font-size: 20px;
+    font-family: 'Gen Jyuu Gothic Monospace Regular', sans-serif !important; /* 設定字體 */
+    font-weight: bold; /* 設定字體加粗 */
+    text-align: center; /* 水平置中 */
+    padding: 10px; /* 設置與邊緣的距離 */
+    box-sizing: border-box; /* 確保 padding 不會影響 width 和 height */
+    line-height: 18px; /* 設置行高來讓文字垂直居中 */
+    text-decoration: none; /* 去掉鏈接下劃線 */
+    transition: background-color 0.5s ease, transform 0.3s ease; /* 渐变背景的过渡 */
+    float: right; /* 使按钮浮动到右侧 */
+}
+
+.bgbtn20:hover {
+    background-color: var(--mycolor01);
+    transform: scale(1.2); /* 使用 scale 改變大小 */
+    border-radius: 30px;
+    /* box-shadow: 0px 0px 1px 3px var(--mycolor50); */
+    color: var(--mytextgreen20);
+}
+
+
+/* 關於btn水平排列 */
+ul {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: center; /* 讓按鈕整體居中 */
+    align-items: center; /* 垂直對齊 */
+    list-style: none; /* 去掉列表樣式 */
+    padding: 0;
+    margin: 0;
+}
+/* 商品ul设定 */
+.mod-list {
+    display: block; /* 取消全局的 flex 布局 */
+    padding-left: 20px; /* 可选：添加默认的列表缩进 */
+    list-style: disc; /* 可选：恢复默认的列表样式 */
+}
+
+.mod-list li{
+    margin-bottom: 10px;
+}
+
+.list-break li {
+    margin-bottom: 10px; /* 可选：为每个列表项添加下边距 */
+}
+
+/* 版面間距格式設定 */
+
+.wrapper {
+    width: 100%; /* 或使用其他百分比值 */
+    max-width: 1600px; /* 設置最大寬度 */
+    margin: 0 auto; /* 居中對齊 */
+}
+
+ul li {
+    
+    /* 已有設置間距 */
+}
+
+/* 去掉最後一個按鈕的右邊距 */
+ul li:last-child .bgbtn10 {
+    margin-right: 0;
+}
+
+.contact-list li {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* 讓 「登入」、「註冊」、「登出」 靠左一點*/
+.topbar-right ul {
+    margin-right: 40px; /* 調整數值以設置所需的距離 */
+    display: flex;
+    align-items: center;
+}
+
+
+/* 下拉式選單 */
+.dropdown {
+    position: relative; /* 父容器需要相對定位 */
+}
+
+.dropdown-menu {
+    display: none; /* 默認隱藏 */
+    position: absolute; /* 絕對定位，從父容器相對定位 */
+    top: 100%; /* 讓選單出現在按鈕下方 */
+    left: 0;
+    background-color: white; /* 下拉選單背景色 */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 添加陰影效果 */
+    padding: 10px 0;
+    list-style: none;
+    margin: 0;
+}
+
+.dropdown-menu li {
+    padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* 懸停時顯示下拉選單 */
+}
+
+
+
+
+
+/* 邊框 */
+/* 邊框1 */
+.bdr10 {
+    border: 2px solid var(--mycolor10);
+}
+
+/* 邊框2 */
+.bdr20 {
+    border: 2px solid var(--bdrcolor20);
+}
+
+/* BOX框框 */
+.box {
+    height: auto;
+    margin-top: 15px;
+    border: 2px solid rgba(65, 51, 55, 0.616);
+}
+
+.box_text {
+    padding: 15px;
+}
+
+/*cover圖片位置設定 */
+.bgcover {
+    background-position: 30% 25%;
+    background-size: cover;
+}
+
+/* 鐵捲門 */
+/* 鐵捲門一号 */
+.box01 {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    margin-top: 10px;
+    margin: 10px 1%;
+    background-color: rgb(255, 255, 255, 0.6)
+}
+
+.roller {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    background-color: rgba(71, 71, 71, 0.596);
+    transition: top 1.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box01:hover .roller {
+    top: 0;
+}
+
+
+/* 诺兰与他的时间线 */
+.timeline-section {
+    position: relative;
+}
+
+.timeline-section::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background-color: var(--mycolor71);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.timeline-section-pointer {
+    position: relative;
+}
+
+.timeline-section-pointer::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: var(--mycolor01);
+    border-radius: 50%;
+    border: 4px solid var(--mycolor71);
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    .timeline-section::before {
+        left: 0;
+    }
+
+    .timeline-section-pointer::before {
+        left: 12px;
+    }
+}
+
+
+/* 緞帶標籤 */
+.tag-title-wrap {
+	background: url(images/darkdots.png) #fff repeat-x center;
+	margin: 0 0 30px 0;
+    height: px;
+}
+
+.tag-title {
+	font-size: 16px;
+	color: #ffffff;
+	float: left;
+	text-transform: capitalize;
+	padding: 8px 10px 8px 8px;
+	position: relative;
+	z-index: 100;
+	margin: 0;
+	line-height: 100%;
+}
+
+.tag-title:before {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 0px;
+	right: -17px;
+	top: 0px;
+	border-width: 16px 16px;
+	border-style: solid;
+	z-index: 10;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearboth {
+	clear: both;
+}
+
+
+/* 滑條 */
+.carousel-indicators {
+    display: none ;
+}
+
+/* 隐藏水平滚动条 - 对所有浏览器有效 */
+.carousel-inner1 {
+    display: flex;
+    overflow-x: hidden; /* 隐藏滚动条 */
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    -ms-overflow-style: none;  /* 隐藏 IE 和 Edge 的滚动条 */
+    scrollbar-width: none;  /* 隐藏 Firefox 的滚动条 */
+}
+
+.carousel-inner1::-webkit-scrollbar {
+    display: none; /* 隐藏 Chrome, Safari 和 Opera 的滚动条 */
+}
+
+
+.carousel-item1 {
+    flex: 0 0 auto;
+    width: 30%;
+    margin-right: 10px; /* 圖片之間留一些空隙 */
+}
+
+.carousel-inner1 img {
+    width: 100%; /* 图片占满其父容器的宽度 */
+    height: 300px; /* 高度根据宽度自动调整，保持比例 */
+    object-fit: cover; /* 确保图片被覆盖，防止变形 */
+}
+
+/* 滑條  按鈕*/
+.carousel-control-prev1,
+.carousel-control-next1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%; /* 可以根據需要調整按鈕的寬度 */
+    height: 100%; /* 確保按鈕在整個垂直方向上都可見 */
+    background-color: rgba(0, 0, 0, 0); /* 調整透明度 */    border: none;
+    z-index: 100; /* 確保按鈕在最上層 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* 添加過渡效果 */
+}
+
+.carousel-control-prev1:hover,
+.carousel-control-next1:hover {
+    background-color: rgba(0, 0, 0, 0.3); /* 增加不透明度 */
+}
+
+.carousel-control-prev1 {
+    left: 0px;
+}
+
+.carousel-control-next1 {
+    right: 0px;
+}
+.carousel-control-prev1 .carousel-control-prev-icon,
+.carousel-control-next1 .carousel-control-next-icon {
+    background-size: 50%; /* 調整箭頭大小 */
+    background-repeat: no-repeat;
+}
+
+/* 区块 轮播 */
+.swiper-container2, .swiper-wrapper, .swiper-slide {
+    height: 100%;
+    visibility: visible; /* 确保轮播内容可见 */
+}
+
+
+/* 關於我們的三個區塊 */
+.bft .col-md-4 {
+    width: 25%; /* 調整每個區塊的寬度 */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify; /* 讓文字縮排撐高區塊 */
+}
+
+.bft h3 {
+    text-align: center;
+    font-size: 1.8rem; /* 調整標題字體大小 */
+}
+
+.bft p {
+    font-size: 1.2rem; /* 調整內文字體大小 */
+    line-height: 1.6; /* 增加行高讓文字更易讀 */
+}
+
+@media (max-width: 768px) {
+    .bft .col-md-4 {
+        width: 80%; /* 在小螢幕上讓區塊更寬 */
+    }
+
+    .bft h3 {
+        font-size: 1.5rem; /* 在小螢幕上調整標題字體大小 */
+    }
+
+    .bft p {
+        font-size: 1rem; /* 在小螢幕上調整內文字體大小 */
+    }
+}
+
+/* 滑動動畫 */
+.animate__animated {
+    animation-duration: 1.35s; /* 2秒的動畫持續時間 */
+}
+.bgcover, .s06_text {
+    opacity: 0; /* 初始隱藏 */
+}
+
+/* footer */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.main-footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-item {
+    flex: 1;
+    margin: 0 15px;
+    min-width: 200px;
+}
+
+.footer-item h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+.footer-item nav a {
+    display: block;
+    color: #aaa;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-item nav a:hover {
+    color: #fff;
+}
+
+.footer-item.footer-subs form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item.footer-subs input[type="text"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-item.footer-subs input[type="submit"] {
+    background: #80b600;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.footer-item.footer-subs input[type="submit"]:hover {
+    background-color: #a7e90f;
+    transform: scale(1.1);
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    font-size: 14px;
+    color: #aaa;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+.btn{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(16, 34, 16);
+    border-radius: 1px;
+    box-shadow: 0px 0px 1px 2px var(--bdrcolor20);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.5s ease,transform 0.3s ease;/* 渐变背景的过渡 */
+}
+.btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: #b2da55; /* hover 时的渐变背景 */
+    transform: scale(1.1); /* 使用 scale 改變大小 */
+
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+    font-size: 14px;
+    color: #aaa;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .main-footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-item {
+        margin-bottom: 20px;
+    }
+}

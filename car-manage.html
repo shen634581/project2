@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>園桌武士-訂單管理</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myall.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="css/superfish.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all" />
+    <link type="text/css" href="css/jqueryui/jquery.ui.datepicker.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/colours/green.css" type="text/css" media="all" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+        rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css' />
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/myall.css?v=1.0">
+
+</head>
+
+<body>
+     <!-- BEGIN .wrapper -->
+     <div class="wrapper">
+
+        <!-- BEGIN .topbar -->
+        <div class="topbar clearfix">
+
+            <!-- BEGIN .social-icons -->
+            <ul class="social-icons">
+                <li><a href="#"><span id="twitter_icon"></span></a></li>
+                <li><a href="#"><span id="facebook_icon"></span></a></li>
+                <li><a href="#"><span id="googleplus_icon"></span></a></li>
+                <li><a href="#"><span id="youtube_icon"></span></a></li>
+                <!-- END .social-icons -->
+            </ul>
+
+            <!-- BEGIN .topbar-right -->
+            <div class="topbar-right clearfix">
+                <ul class="clearfix">
+                    <span class=" fw-900 ms-3" >當前會員: 
+                        <span class="txt20 fw-900"
+                        id="s02_login_username" style="margin-right: 20px;">未登錄</span> 
+                    </span>
+                    <!-- 移除了 button，將其功能轉移到 a 標籤 -->
+                    <li class="">
+                        <a href="checkout.html" data-bs-toggle="modal" data-bs-target="#loginModal" id="s02_login_btn"
+                            class="btn d-none"></span>登入</a>
+                    </li>
+                    <!-- 移除了 button，將其功能轉移到 a 標籤 -->
+                    <li class="">
+                        <a href="my-account.html" data-bs-toggle="modal" data-bs-target="#registerModal"
+                            id="s02_register_btn" class="btn d-none">註冊</a>
+                    </li>
+                    <!-- 移除了 button，將其功能轉移到 a 標籤 -->
+                    <li class="">
+                        <a href="project-spa.html" id="s02_logout_btn" class="btn d-none">登出</a>
+                    </li>
+                    <li class="">
+                        <a href="my-member.html">個人訂單查詢</a>
+                    </li>
+                </ul>
+
+                <div class="cart-top" style="height: 50px;">
+                    <p><a href="cart.html" style="text-align: center;">購物車</a></p>
+                </div>
+                <!-- END .topbar-right -->
+            </div>
+
+            <!-- END .topbar -->
+        </div>
+
+        <!-- 大標題 圓桌武士-->
+        <div id="s01" style="height:200px; display: flex; align-items: center; justify-content: center;"
+            class="topbar clearfix">
+            <h1 class="text-center align-content-center">
+                圓桌武士 <span class="txt30">園藝造景工坊</span>
+            </h1>
+        </div>
+
+
+        <!-- 選單 -->
+        <div class="bg10" id="s02">
+            <div class="banner">
+                <nav class="bg20 mt-4" style="height:70px;">
+                    <ul>
+                        <li><a href="project-spa.html" class="bgbtn10">首頁</a></li>
+                        <li class="dropdown"><a href="products.html" class="bgbtn10">產品</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">燈飾</a></li>
+                                <li><a href="#">戶外桌椅</a></li>
+                                <li><a href="#">園藝用品</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#" class="bgbtn10">合作店家</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">店家一</a></li>
+                                <li><a href="#">店家二</a></li>
+                                <li><a href="#">店家三</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="bgbtn10">製作團隊</a></li>
+                        <li><a href="member.html" class="bgbtn10">會員管理</a></li>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+<!-- ------------------------------------------------------------------------- -->
+        <div class="section page-content clearfix">
+
+            <h2 class="page-title">訂單管理系統</h2>
+
+            <p>此介面為訂單管理系統，請相關人員妥善管理各訂單資訊，如有問題請向上提報。</p>
+
+            <div class="tag-title-wrap clearfix">
+                <h4 class="tag-title">全部訂單列表</h4>
+            </div>
+
+            <table width="100%" class="account-table">
+                <thead>
+                    <tr>
+                        <th width="8%">訂單編號</th>
+                        <th width="8%">會員名稱</th>
+                        <th width="8%">商品名稱</th>
+                        <th width="15%">下單時間</th>
+                        <th width="8%">訂單狀態</th>
+                        <th width="15%">訂單更改</th>
+                    </tr>
+                </thead>
+                <tbody id="datalist">
+                    <tr>
+                        <td data-th="訂單編號"><span class="table-col">002</span></td>
+                        <td data-th="會員名稱"><span class="table-col">綠茶</span></td>
+                        <td data-th="商品名稱"><span class="table-col">綠茶</span></td>
+                        <td data-th="下單時間"><span class="table-col">30</span></td>
+                        <td>
+                            <div class="form-check form-switch">
+                                <input type="checkbox" name="switch01" id="switch01" class="form-check-input">
+                                <label for="" class="form-check-label " id="color">完成</label>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateModal"
+                                data-id="XX" data-username="XX" data-email="XX" data-created_at="XX"
+                                id="btn_update">更新</button>
+                            <button class="btn btn-danger" data-id="XX" id="btn_delete">刪除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination" id="pageList">
+                    <li class="page-item" onclick="drawTable(xxx)">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <!--JavaScript-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js'></script>
+    <script type='text/javascript' src='js/jquery.prettyPhoto.js'></script>
+    <script type="text/javascript" src="js/superfish.js"></script>
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>F
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        var flag_email = true;
+        var u_id; //for update
+        var newdata = [];
+        var mystate;
+
+        //登入部分
+        $(function () {
+            if (getCookie("Uid01") != "") {
+                //將uid01傳遞至後端api確認是否合法
+                var dataJSON = {};
+                dataJSON["Uid01"] = getCookie("Uid01");
+                console.log(JSON.stringify(dataJSON));
+
+                $.ajax({
+                    type: "POST",
+                    url: "uid-check-api.php",
+                    data: JSON.stringify(dataJSON),
+                    dataType: "json",
+                    success: showdata_check_uid,
+                    error: function () {
+                        alert("error-uid-check-api.php");
+                    }
+                });
+            } else {
+                alert("尚未登入，請登入使用附加功能");
+                location.href = "project-spa.html";
+            }
+            //登出按鈕監聽
+            $("#s02_logout_btn").click(function () {
+                setCookie("Uid01", "", 7);
+                location.href = "project-spa.html";
+            });
+            //監聽email
+            $("#email").bind("input propertychange", function () {
+                if ($(this).val().length > 3 && $(this).val().length < 8) {
+
+                    $(this).removeClass("is-invalid");
+                    $(this).addClass("is-valid");
+                    flagemail = true;
+
+                } else {
+
+                    $(this).removeClass("is-valid");
+                    $(this).addClass("is-invalid");
+                    flagemail = false;
+                }
+            });
+           
+        });
+
+
+
+
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function showdata_check_uid(data) {
+            console.log(data);
+            if (data.state) {
+                if (data.data.Level == "900") {
+                    //會員等級判斷為管理員
+
+                    $("#member").removeClass("d-none");
+                    //顯示帳號登入
+                    $("#s02_login_username").text(data.data.Username);
+                    //顯示登出帳號
+                    $("#s02_out").removeClass("d-none");
+                    //顯示登出按鈕
+                    $("#s02_logout_btn").removeClass("d-none");
+
+
+                    //讀取商品資料
+                    $.ajax({
+                        type: "GET",
+                        url: "car-read-api.php",
+
+                        dataType: "json",
+                        success: showdata_read,
+                        error: function () {
+                            alert("error-car-read-api.php");
+                        }
+                    });
+                } else {
+                    //會員等級判斷不是管理員
+                    alert("不是管理員");
+                    location.href = "project-spa.html";
+
+                }
+            }
+
+        }
+        //會員讀取
+      
+        //會員分頁
+        function showdata_read(data) {
+            console.log(data);
+            // //重構data 產生newdata
+            data.data.forEach(function (item, key) {
+                if (key % 10 == 0) {
+                    newdata.push([]);
+                }
+                var page = parseInt(key / 10);
+                newdata[page].push(item);
+
+            });
+            console.log(newdata);
+
+            drawTable(0);
+        }
+
+        //會員渲染
+        function drawTable(page) {
+            $("#datalist").empty();
+            newdata[page].forEach(function (item) {
+                if (item.State == 1) {
+                    myswitch = 'checked';
+                    state = '已完成';
+                    color = 'text-success'
+
+
+                } else {
+                    myswitch = '';
+                    state = '未完成';
+                    color = 'text-danger'
+                }
+                var strHTML = '<tr><td data-th="訂單編號"><span class="table-col">'+item.id+'</span></td><td data-th="會員名稱"><span class="table-col">'+item.Username+'</span></td><td data-th="商品名稱"><span class="table-col">'+item.Product+'</span></td><td data-th="下單時間"><span class="table-col">'+item.Creat_at+'</span></td><td><div class="form-check form-switch"><input type="checkbox" name="switch01" id="switch01"data-id="' + item.id + '"' + myswitch + ' class="form-check-input"><label for="" class="form-check-label " id="color">'+state+'</label></div></td><td><button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateModal"data-id="XX" data-username="XX" data-email="XX" data-created_at="XX"id="btn_update">更新</button><button class="btn btn-danger ms-2" data-id="'+item.id+'" id="btn_delete">刪除</button></td></tr>';
+                $("#datalist").append(strHTML);
+            });
+            //產生頁碼
+
+            $("#pageList").empty();
+            for (var i = 0; i < newdata.length; i++) {
+                var thispage = i + 1;
+                var strHTML;
+                if (thispage == page + 1) {
+                    strHTML = '<li class="page-item active" onclick="drawTable(' + (thispage - 1) + ')"><a class="page-link" href="#">' + thispage + '</a></li>';
+                } else {
+                    strHTML = '<li class="page-item" onclick="drawTable(' + (thispage - 1) + ')"><a class="page-link" href="#">' + thispage + '</a></li>';
+                }
+
+
+                $("#pageList").append(strHTML);
+            }
+            //刪除監聽
+            $("#datalist #btn_delete").click(function () {
+                if (confirm("確認刪除訂單?")) {
+                    console.log($(this).data("id"));
+                    var datajson = {};
+                    datajson["id"] = $(this).data("id");
+                    console.log(JSON.stringify(datajson));
+
+                    $.ajax({
+                        type: "POST",
+                        url: "car-delete-api.php",
+                        data: JSON.stringify(datajson),
+                        dataType: "json",
+                        success: showdata_car_delete,
+                        error: function () {
+                            alert("erroe-car-delete-api.php");
+                        }
+
+                    })
+                }
+            });
+            
+        //監聽modal_btn_update
+        // $("#datalist #btn_update").click(function () {
+        //     console.log($(this).data("id"));
+        //     console.log($(this).data("username"));
+        //     console.log($(this).data("email"));
+        //     console.log($(this).data("created_at"));
+
+        //     $("#updateModal_username").val($(this).data("username"));
+        //     $("#updateModal_email").val($(this).data("email"));
+        // });
+
+
+        //訂單狀態switch監聽 完成:綠色 未完成:紅色
+        $("#datalist #switch01").change(function () {
+            console.log($(this).is(":checked"));
+            if ($(this).is(":checked")) {
+                mystate = "1"
+                $(this).next().text("完成");
+                $(this).next().removeClass("text-danger").addClass("text-success");
+            } else {
+                mystate = "0"
+                $(this).next().text("未完成");
+                $(this).next().removeClass("text-success").addClass("text-danger");
+            }
+            //傳遞至後端API更新
+            //{"id":"xx","state";"x"}
+            var dataJSON = {};
+            dataJSON["id"] = $(this).data("id");
+            dataJSON["state"] = mystate;
+            console.log(JSON.stringify(dataJSON));
+            $.ajax({
+                type: "POST",
+                url: "car-update-state-api.php",
+                data: JSON.stringify(dataJSON),
+                dataType: "json",
+                success: showdata_Update_state,
+                error: function () {
+                    alert("error-car-update-state-api.php");
+                }
+            });
+        });
+
+        
+
+        }
+
+
+
+
+        function showdata_Update_state(data) {
+            console.log(data);
+            if (data.state) {
+                alert(data.message);
+                location.reload();
+            } else {
+                alert(data.message);
+            }
+        }
+
+    
+        
+        function showdata_car_delete(data) {
+            console.log(data);
+            if (data.state) {
+                alert(data.message);
+                location.href = "car-manage.html"
+            } else {
+                alert(data.message);
+            }
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

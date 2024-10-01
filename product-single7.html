@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html dir="ltr" lang="en-US" class="ie6"> <![endif]-->
+<!--[if IE 7]>    <html dir="ltr" lang="en-US" class="ie7"> <![endif]-->
+<!--[if IE 8]>    <html dir="ltr" lang="en-US" class="ie8"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html dir="ltr" lang="en-US"> <!--<![endif]-->
+
+<!-- BEGIN head -->
+
+<head>
+
+	<!--Meta Tags-->
+	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+
+	<!--Title-->
+	<title>圓桌武士 園藝造景工坊 | 簡易植栽</title>
+
+	<!-- Bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/myall.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<link rel="stylesheet" href="css/all.min.css">
+
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="css/superfish.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all" />
+	<link type="text/css" href="css/jqueryui/jquery.ui.datepicker.css" rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/colours/green.css" type="text/css" media="all" />
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Allura&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+		rel="stylesheet">
+
+	<link
+		href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+		rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css' />
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<!-- animate.css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/myall.css">
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<!-- BEGIN body -->
+<style>
+	.custom-border {
+		border: 4px solid blue;
+	}
+
+	.large-input {
+		width: 40px;
+		height: 40px;
+	}
+
+	#tabs ul.nav {
+		display: flex;
+		justify-content: space-between;
+		/* 使列表项分布在两端，中间留空 */
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	#tabs ul.nav li {
+		flex: 1;
+		/* 使每个列表项占据相同的空间 */
+		text-align: center;
+		/* 文字居中 */
+	}
+
+	#tabs ul.nav li.active {
+		border-bottom: 2px solid #007bff;
+		/* 激活状态下的底部边框颜色 */
+	}
+
+	#tabs a {
+		text-decoration: none;
+		color: black;
+		display: block;
+		/* 使链接填满整个li */
+	}
+
+	#tabs div {
+		display: none;
+		padding: 10px;
+		text-align: justify;
+		/* 文字两端对齐 */
+	}
+
+	#tabs div.active {
+		display: block;
+	}
+</style>
+
+
+<body>
+
+	<!-- BEGIN .wrapper -->
+	<div class="wrapper">
+
+		<!-- 上方登入資訊條 -->
+		<div class="topbar clearfix">
+
+			<!-- BEGIN .social-icons -->
+			<ul class="social-icons">
+				<li><a href="#"><span id="twitter_icon"></span></a></li>
+				<li><a href="#"><span id="facebook_icon"></span></a></li>
+				<li><a href="#"><span id="googleplus_icon"></span></a></li>
+				<li><a href="#"><span id="youtube_icon"></span></a></li>
+				<!-- END .social-icons -->
+			</ul>
+
+			<!-- BEGIN .topbar-right -->
+			<div class="topbar-right clearfix">
+				<ul class="clearfix">
+					<span class=" fw-900 ms-3">當前會員:
+						<span class="txt20 fw-900" id="s02_login_username" style="margin-right: 20px;">未登錄</span>
+					</span>
+					<!-- 移除了 button，將其功能轉移到 a 標籤 -->
+					<li class="">
+						<a href="checkout.html" data-bs-toggle="modal" data-bs-target="#loginModal" id="s02_login_btn"
+							class="btn"> <span class="icon-placeholder"></span>登入</a>
+					</li>
+					<!-- 移除了 button，將其功能轉移到 a 標籤 -->
+					<li class="">
+						<a href="my-account.html" data-bs-toggle="modal" data-bs-target="#registerModal"
+							id="s02_register_btn" class="btn">註冊</a>
+					</li>
+					<!-- 移除了 button，將其功能轉移到 a 標籤 -->
+					<li class="">
+						<a href="project-spa.html" id="s02_logout_btn" class="btn d-none">登出</a>
+					</li>
+					<li class="">
+						<a href="my-member.html">個人訂單查詢</a>
+					</li>
+				</ul>
+
+				<div class="cart-top" style="height: 50px;">
+					<p><a href="cart.html" style="text-align: center;">購物車</a></p>
+				</div>
+				<!-- END .topbar-right -->
+			</div>
+
+			<!-- END .topbar -->
+		</div>
+
+		<!-- 大標題 園桌武士-->
+		<div id="s01" style="height:200px; display: flex; align-items: center; justify-content: center;"
+			class="topbar clearfix">
+			<h1 class="text-center align-content-center">
+				園桌武士 <span class="txt30">園藝造景工坊</span>
+			</h1>
+		</div>
+
+		<!-- 選單 -->
+		<div class="bg10" id="s02">
+			<div class="banner">
+				<nav class="bg20 mt-4" style="height:70px;">
+					<ul>
+						<li><a href="project-spa.html" class="bgbtn10">首頁</a></li>
+						<li class="dropdown"><a href="#" class="bgbtn10">燈飾</a>
+							<ul class="dropdown-menu">
+								<li><a href="product-single1.html">燈飾1</a></li>
+								<li><a href="product-single2.html">燈飾2</a></li>
+								<li><a href="product-single3.html">燈飾3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="bgbtn10">戶外桌椅</a>
+							<ul class="dropdown-menu">
+								<li><a href="product-single4.html">戶外桌椅1</a></li>
+								<li><a href="product-single5.html">戶外桌椅2</a></li>
+								<li><a href="product-single6.html">戶外桌椅3</a></li>
+							</ul>
+						</li>
+						<li class="dropdown"><a href="#" class="bgbtn10">園藝植物</a>
+							<ul class="dropdown-menu">
+								<li><a href="product-single7.html">園藝植物1</a></li>
+								<li><a href="product-single8.html">園藝植物2</a></li>
+								<li><a href="product-single9.html">園藝植物3</a></li>
+							</ul>
+						</li>
+						<li><a href="project-aboutus.html" class="bgbtn10">關於我們</a></li>
+						<li class="dropdown"><a href="" class="bgbtn10 d-none" id="member_manage">管理</a>
+							<ul class="dropdown-menu">
+								<li><a href="member.html">會員管理</a></li>
+								<li><a href="project-contact.html">產品管理</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+
+		<!-- loginModal -->
+		<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header text-bg-warning">
+						<h1 class="modal-title fs-5 fw-900 text-white" id="exampleModalLabel">會員登入</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						<div class="mb-3">
+							<label for="loginModal_username" class="form-label">帳號</label>
+							<input type="text" name="loginModal_username" id="loginModal_username" class="form-control">
+						</div>
+						<div class="mb-3">
+							<label for="loginModal_password" class="form-label">密碼</label>
+							<input type="password" name="loginModal_password" id="loginModal_password"
+								class="form-control">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary" id="loginModal_ok_btn">確認</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- registerModal -->
+		<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-xl">
+				<div class="modal-content">
+					<!-- header -->
+					<div class="modal-header text-bg-success">
+						<h1 class="modal-title fs-5 fw-900 text-white" id="exampleModalLabel">會員註冊</h1>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<!-- body -->
+					<div class="modal-body">
+						<div class="row">
+							<div class="col-6">
+								<h3>會員守則</h3>
+								<h4>會員資格</h4>
+								<ul>
+									<li>會員需年滿18歲，並同意遵守本守則。</li>
+								</ul>
+								<h4>會員權利</h4>
+								<ul>
+									<li>會員享有參加活動、使用設施、及享受優惠的權利。</li>
+								</ul>
+								<h4>會員義務</h4>
+								<ul>
+									<li>會員需遵守設施使用規定，愛護公共財物，並保持場所整潔。</li>
+								</ul>
+								<h4>會員行為</h4>
+								<ul>
+									<li>會員需尊重其他會員及工作人員，不得有不當行為。</li>
+								</ul>
+								<h4>終止會員資格</h4>
+								<ul>
+									<li>違反守則者，經警告後仍未改善，將取消會員資格。</li>
+								</ul>
+								<div class="form-check">
+									<input type="checkbox" name="registerModal_chk" id="registerModal_chk"
+										class="form-check-input is-invalid">
+									<label for="registerModal_chk" class="form-check-label">同意</label>
+									<div class="valid-feedback">同意遵守規定</div>
+									<div class="invalid-feedback">不同意遵守規定</div>
+								</div>
+							</div>
+							<div class="col-6">
+								<div class="mb-3">
+									<label for="registerModal_username" class="form-label">帳號</label>
+									<input type="text" name="registerModal_username" id="registerModal_username"
+										class="form-control is-invalid" placeholder="字數3-8">
+									<div class="valid-feedback">符合規定</div>
+									<div class="invalid-feedback">不符合規定</div>
+								</div>
+								<div class="mb-3">
+									<label for="registerModal_password" class="form-label">密碼</label>
+									<input type="password" name="registerModal_password" id="registerModal_password"
+										class="form-control is-invalid" placeholder="字數3-8">
+									<div class="valid-feedback">符合規定</div>
+									<div class="invalid-feedback">不符合規定</div>
+								</div>
+								<div class="mb-3">
+									<label for="registerModal_re_password" class="form-label">確認密碼</label>
+									<input type="password" name="registerModal_re_password"
+										id="registerModal_re_password" class="form-control is-invalid"
+										placeholder="確認密碼">
+									<div class="valid-feedback">符合規定</div>
+									<div class="invalid-feedback">不符合規定</div>
+								</div>
+								<div class="mb-3">
+									<label for="registerModal_email" class="form-label">email</label>
+									<input type="email" name="registerModal_email" id="registerModal_email"
+										class="form-control is-invalid" placeholder="字數3-15">
+									<div class="valid-feedback">符合規定</div>
+									<div class="invalid-feedback">不符合規定</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+						<button type="button" class="btn btn-primary" id="registerModal_ok_btn">確認</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 以上所有分頁通用 ----------------------------------------------------------------------------------------------->
+
+		<div id="page-header">
+			<img src="images/sheep!.gif" style="object-fit: cover; height: 200px;">
+		</div>
+
+		<!-- BEGIN .section -->
+		<div class="section">
+
+			<ul class="columns-content page-content clearfix">
+
+				<!-- BEGIN .col-main -->
+				<li class="col-main">
+
+					<h2 class="page-title">簡易植栽</h2>
+
+					<ul class="columns-2 product-single-content clearfix">
+
+						<li class="col2 clearfix">
+
+							<!-- 單張圖片顯示 -->
+							<div class="single-image-container">
+								<img src="images_upload/20240919133116_plant1.png" alt="Seaweed Soap"
+									style="width: 712px; height: 712px;" />
+							</div>
+
+						</li>
+						<li class="col2 clearfix">
+
+							<h2>
+								<span class="price-now">$2800</span>
+							</h2>
+
+							<p>Vestibulum lacinia neque eu mi accumsan faucibus. Vivamus sed odio nisl, porta facilisis
+								magna. Maecenas sed mi ac ante gravida porta id eget odio. Mauris vel leo nibh. Quisque
+								enim sem, porttitor et congue vehicula, congue sit amet felis.</p>
+
+							<form method="" class="qty-product-single clearfix">
+								<div class="qty-fields-large clearfix fl">
+									<button type="button" onclick="decreaseValue()" class="btn btn-info">-</button>
+									<input type="text" id="quantity" value="1" min="1" max="100" step="1"
+										class="large-input custom-border text-center">
+									<button type="button" onclick="increaseValue()" class="btn btn-info">+</button>
+								</div>
+								<button type="submit" class="bgbtn20 fr" onclick="addToCart('簡易植栽',2800)">加入購物車
+									&raquo;</button>
+							</form>
+
+						</li>
+
+					</ul>
+
+					<div id="tabs">
+						<ul class="nav clearfix">
+							<li><a href="#tabs-tab-title-1" class="">產品特色</a></li>
+							<li><a href="#tabs-tab-title-2" class="">使用材質</a></li>
+							<li><a href="#tabs-tab-title-3" class="">適合族群</a></li>
+						</ul>
+						<div id="tabs-tab-title-1" class="">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent et rhoncus neque.
+								Maecenas enim nunc, dapibus in mattis eleifend, luctus et magna. Maecenas nunc est,
+								posuere sed convallis tincidunt</p>
+						</div>
+						<div id="tabs-tab-title-2">
+							<p>Morbi lacinia, nisi nec rutrum faucibus, enim augue feugiat libero, sit amet sollicitudin
+								massa nisi eget nulla. Etiam pretium, est sit amet eleifend posuere, tellus nisl
+								interdum massa</p>
+						</div>
+						<div id="tabs-tab-title-3">
+							<p>Ut bibendum ullamcorper tortor, eget aliquet odio facilisis quis. Nulla interdum aliquet
+								scelerisque. Curabitur ante metus, laoreet eu convallis a, tristique a arcu. Donec id
+								erat sed lectus congue tempor</p>
+						</div>
+					</div>
+
+					<!-- END .col-main -->
+				</li>
+
+				<!-- BEGIN .col-sidebar -->
+				<li class="col-sidebar">
+
+					<div class="widget">
+						<div class="widget-title clearfix">
+							<h4 class="tag-title">Categories</h4>
+						</div>
+						<!-- <ul>
+							<li><a href="#">Skin Care</a></li>
+							<li><a href="#">Bath &amp; Body Care</a></li>
+							<li><a href="#">Fragrance</a></li>
+							<li><a href="#">Make-Up</a></li>
+							<li><a href="#">Hair</a></li>
+							<li><a href="#">Moisturisers</a></li>
+						</ul> -->
+					</div>
+
+					<div class="widget">
+						<div class="widget-title clearfix">
+							<h4 class="tag-title">Tags</h4>
+						</div>
+						<!-- <ul class="wp-tag-cloud clearfix">
+							<li><a href="#">Tag #1</a></li>
+							<li><a href="#">Tag #2</a></li>
+							<li><a href="#">Tag #3</a></li>
+							<li><a href="#">Tag #4</a></li>
+							<li><a href="#">Tag #5</a></li>
+							<li><a href="#">Tag #6</a></li>
+						</ul> -->
+					</div>
+
+					<div class="widget">
+						<div class="widget-title clearfix">
+							<h4 class="tag-title">Recent Posts</h4>
+						</div>
+
+						<!-- <ul class="latest-posts-list clearfix">
+
+							<li class="clearfix">
+								<div class="lpl-img">
+									<a href="blog-single.html" rel="bookmark">
+										<img width="66" height="66" src="images/blog-thumb1.jpg" alt="" />
+									</a>
+								</div>
+								<div class="lpl-content">
+									<h6><a href="blog-single.html" rel="bookmark">Dasellus ac nibh urna donec ac
+											urna</a> <span> Posted Jun 13, 2012 By admin</span></h6>
+								</div>
+							</li>
+
+							<li class="clearfix">
+								<div class="lpl-img">
+									<a href="blog-single.html" rel="bookmark">
+										<img width="66" height="66" src="images/blog-thumb2.jpg" alt="" />
+									</a>
+								</div>
+								<div class="lpl-content">
+									<h6><a href="blog-single.html" rel="bookmark">Dasellus ac nibh urna donec ac
+											urna</a> <span> Posted Jun 13, 2012 By admin</span></h6>
+								</div>
+							</li>
+
+							<li class="clearfix">
+								<div class="lpl-img">
+									<a href="blog-single.html" rel="bookmark">
+										<img width="66" height="66" src="images/blog-thumb3.jpg" alt="" />
+									</a>
+								</div>
+								<div class="lpl-content">
+									<h6><a href="blog-single.html" rel="bookmark">Dasellus ac nibh urna donec ac
+											urna</a> <span> Posted Jun 13, 2012 By admin</span></h6>
+								</div>
+							</li>
+
+						</ul> -->
+
+					</div>
+
+					<!-- END .col-sidebar -->
+				</li>
+
+			</ul>
+
+			<!-- END .section -->
+		</div>
+
+
+		<!-- *************footer*************************** -->
+		<footer class="main-footer" id="s13">
+			<div class="container">
+				<div class="footer-item">
+					<h4>園桌武士</h4>
+					<nav>
+						<a href="project-spa.html"><i class="fa fa-angle-right"></i> 首頁 </a>
+						<a href="project-aboutus.html"><i class="fa fa-angle-right"></i> 關於我們</a>
+						<a href="project-contact.html"><i class="fa fa-angle-right"></i> 聯繫方式</a>
+					</nav>
+				</div>
+
+				<div class="footer-item">
+					<h4>燈飾</h4>
+					<nav>
+						<a href="product-single1.html"><i class="fa fa-angle-right"></i>中式燈飾</a>
+						<a href="product-single2.html"><i class="fa fa-angle-right"></i>簡約燈飾</a>
+						<a href="product-single3.html"><i class="fa fa-angle-right"></i>古典燈飾</a>
+					</nav>
+				</div>
+				<div class="footer-item">
+					<h4>戶外桌椅組</h4>
+					<nav>
+						<a href="product-single4.html"><i class="fa fa-angle-right"></i>不鏽鋼桌椅組</a>
+						<a href="product-single5.html"><i class="fa fa-angle-right"></i>戶外收納桌椅組</a>
+						<a href="product-single6.html"><i class="fa fa-angle-right"></i>戶外實木桌椅組</a>
+					</nav>
+				</div>
+				<div class="footer-item">
+					<h4>園藝植栽</h4>
+					<nav>
+						<a href="product-single7.html"><i class="fa fa-angle-right"></i>簡易植栽</a>
+						<a href="product-single8.html"><i class="fa fa-angle-right"></i>辦公盆景</a>
+						<a href="product-single9.html"><i class="fa fa-angle-right"></i>懶人室內盆景</a>
+					</nav>
+				</div>
+				<div class="footer-item">
+					<h4>後台管理</h4>
+					<nav>
+						<a href="member.html"><i class="fa fa-angle-right"></i> 會員管理</a>
+						<a href="cart.html"><i class="fa fa-angle-right"></i> 購物車</a>
+						<a href="#"><i class="fa fa-angle-right"></i> 網案連結</a>
+					</nav>
+				</div>
+				<div class="footer-item footer-subs mt-3">
+					<h4>訂閱電子報</h4>
+					<form>
+						<input type="text" name="">
+						<input type="submit" value="訂閱" class="subscribe-btn">
+					</form>
+				</div>
+			</div>
+		</footer>
+
+		<div class="copyright">
+			Copyright &copy; 2024 雲端班製作
+		</div>
+	</div>
+
+	<!-- END body -->
+	<!--JavaScript-->
+
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+	<script src="js/wow.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<!-- 登入 -->
+	<script>
+		var flag_username = false;
+		var flag_password = false;
+		var flag_re_password = false;
+		var flag_email = false;
+		var flag_chk = false;
+
+
+		$(function () {
+			//確認uid是否存在且合法
+			if (getCookie("Uid01") != "") {
+				//將uid01傳遞至後端api確認是否合法
+				var dataJSON = {};
+				dataJSON["Uid01"] = getCookie("Uid01");
+				console.log(JSON.stringify(dataJSON));
+
+				$.ajax({
+					type: "POST",
+					url: "uid-check-api.php",
+					data: JSON.stringify(dataJSON),
+					dataType: "json",
+					success: showdata_check_uid,
+					error: function () {
+						alert("error-uid-check-api.php");
+					}
+				});
+			} else {
+				alert("尚未登入，登入後才能下單購物唷");
+			}
+			// 註冊功能
+
+			// 監聽username
+			$("#registerModal_username").bind("input propertychange", function () {
+				if ($(this).val().length > 2 && $(this).val().length < 9) {
+
+					var dataJSON = {};
+					dataJSON["username"] = $("#registerModal_username").val();
+					console.log(JSON.stringify(dataJSON));
+					//傳送至後端API\
+
+					$.ajax({
+						type: "POST",
+						url: "member-check-api.php",
+						data: JSON.stringify(dataJSON),
+						dataType: "json",
+						success: showdata_checkuni,
+						error: function () {
+							alert("error-member-check-api.php");
+						}
+					});
+				} else {
+					// 不符合規定
+					$(this).removeClass("is-valid");
+					$(this).addClass("is-invalid");
+					flag_username = false;
+				}
+			});
+
+			// 監聽password
+			$("#registerModal_password").bind("input propertychange", function () {
+				if ($(this).val().length > 2 && $(this).val().length < 9) {
+					// 符合規定
+					$(this).removeClass("is-invalid");
+					$(this).addClass("is-valid");
+					flag_password = true;
+				} else {
+					// 不符合規定
+					$(this).removeClass("is-valid");
+					$(this).addClass("is-invalid");
+					flag_password = false;
+				}
+
+				if ($(this).val() !== $("#registerModal_re_password").val()) {
+
+					$("#registerModal_re_password").removeClass("is-valid");
+					$("#registerModal_re_password").addClass("is-invalid");
+					flag_re_password = false;
+				}
+				if ($(this).val() == $("#registerModal_re_password").val()) {
+
+					$("#registerModal_re_password").removeClass("is-invalid");
+					$("#registerModal_re_password").addClass("is-valid");
+					flag_re_password = true;
+				}
+			});
+
+			//監聽registerModal_re_password
+			$("#registerModal_re_password").bind("input propertychange", function () {
+				if ($(this).val() == $("#registerModal_password").val()) {
+					//符合規定
+					$(this).removeClass("is-invalid");
+					$(this).addClass("is-valid");
+					flag_re_password = true;
+				} else {
+					//不符合規定
+					$(this).removeClass("is-valid");
+					$(this).addClass("is-invalid");
+					flag_re_password = false;
+				}
+			});
+
+			//監聽username
+			$("#registerModal_email").bind("input propertychange", function () {
+				if ($(this).val().length > 2 && $(this).val().length < 16) {
+					//符合規定
+					$(this).removeClass("is-invalid");
+					$(this).addClass("is-valid");
+					flag_email = true;
+				} else {
+					//不符合規定
+					$(this).removeClass("is-valid");
+					$(this).addClass("is-invalid");
+					flag_email = false;
+				}
+			});
+
+			//同意按鈕
+			$("#registerModal_chk").change(function () {
+				if ($(this).is(":checked")) {
+					//打勾 
+					$(this).removeClass("is-invalid");
+					$(this).addClass("is-valid");
+					flag_chk = true;
+				} else {
+					//未打勾
+					$(this).removeClass("is-valid");
+					$(this).addClass("is-invalid");
+					flag_chk = false;
+				}
+			});
+
+			//註冊按鈕監聽
+			$("#registerModal_ok_btn").click(function () {
+				if (flag_username && flag_password && flag_re_password && flag_email && flag_chk) {
+
+					var dataJSON = {};
+					dataJSON["username"] = $("#registerModal_username").val();
+					dataJSON["password"] = $("#registerModal_password").val();
+					dataJSON["email"] = $("#registerModal_email").val();
+
+					console.log(JSON.stringify(dataJSON));
+
+					$.ajax({
+						type: "POST",
+						url: "member-create-api.php",
+						data: JSON.stringify(dataJSON),
+						contentType: "application/json", // 添加這一行
+						dataType: "json",
+						success: showdata_register,
+						error: function (xhr, status, error) {
+							console.error("AJAX Error: " + status + " - " + error);
+							alert("Error: " + error);
+						}
+					});
+
+				} else {
+					// alert("欄位有錯請修正!");
+					if (flag_chk == false) {
+						Swal.fire({
+							title: "請按同意!",
+							showDenyButton: false,
+							showCancelButton: false,
+							confirmButtonText: "確認",
+							denyButtonText: `Don't save`
+						}).then((result) => {
+							/* Read more about isConfirmed, isDenied below */
+							if (result.isConfirmed) {
+								Swal.fire("確認", "", "success");
+							} else if (result.isDenied) {
+								Swal.fire("Changes are not saved", "", "info");
+							}
+						});
+					}
+
+				}
+			});
+
+			//**********************************登入功能***********************************************
+			//登入按鈕監聽
+			$("#loginModal_ok_btn").click(function () {
+				if ($("#loginModal_username").val() != "" && $("#loginModal_password").val() != "") {
+					//帳號密碼都有輸入
+					//傳遞登入資料至後端API 執行登入行為
+					//{"username":"owner01", "password":"123456"}
+					var dataJSON = {};
+					dataJSON["username"] = $("#loginModal_username").val();
+					dataJSON["password"] = $("#loginModal_password").val();
+
+					console.log(JSON.stringify(dataJSON));
+
+					$.ajax({
+
+						type: "POST",
+						url: "member-login-api.php",
+						data: JSON.stringify(dataJSON),
+						dataType: "json",
+						success: showdata_login,
+						error: function () {
+							alert("error-member-login-api.php");
+						}
+					});
+
+				} else {
+					//帳號密碼都有空白欄位
+					alert("帳號密碼有空白欄位");
+				}
+			});
+
+
+			//登出按鈕監聽
+			$("#s02_logout_btn").click(function () {
+				// 清除Uid01 cookie
+				setCookie("Uid01", "", -1); // 设置过期时间为过去，即删除cookie
+
+				// 更新界面元素，反映登出状态
+				$("#s02_login_username").text("未登錄");
+				$("#s02_login_btn").removeClass("d-none");
+				$("#s02_register_btn").removeClass("d-none");
+				$("#s02_logout_btn").addClass("d-none");
+				$("member_manage").addClass("d-none");
+
+				// 隐藏高级功能
+				$("#s02btn01").addClass("disabled");
+				$("#s02btn02").addClass("disabled");
+				$("#s02btn03").addClass("disabled");
+				$("#s041").addClass("d-none");
+				$("#s042").addClass("d-none");
+
+				// 刷新页面以更新状态
+				alert("已登出，登入後才能下單購物唷");
+				return false;
+
+			});
+
+		}); //end fun
+
+		//註冊時檢測帳號是否重複
+		function showdata_checkuni(data) {
+			console.log(data);
+			if (data.state) {
+				$("#registerModal_username").removeClass("is-invalid");
+				$("#registerModal_username").addClass("is-valid");
+				flag_username = true;
+			} else {
+				$("#registerModal_username").removeClass("is-valid");
+				$("#registerModal_username").addClass("is-invalid");
+				flag_username = false;
+			}
+		}
+		//註冊function
+		function showdata_register(data) {
+			console.log(data);
+			if (data.state) {
+				alert(data.message);
+				// location.href = "project-spa.html";
+			} else {
+				alert(data.message);
+			}
+		}
+		//登入function
+		function showdata_login(data) {
+			console.log(data);
+			if (data.state) {
+				if (data.data.State == "1") {
+					alert(data.message);
+					//loginModal隱藏
+					$("#loginModal").modal("hide");
+					//顯示登入帳號
+					$("#s02_login_username").text();
+					$("#s02_login_username").text(data.data.Username);
+					//隱藏登入與註冊按鈕
+					$("#s02_login_btn").addClass("d-none");
+					$("#s02_register_btn").addClass("d-none");
+					//顯示登出按鈕
+					$("#s02_logout_btn").removeClass("d-none");
+					$("member_manage").removeClass("d-none");
+
+
+					// 顯示高級功能
+					$("#s02btn01").removeClass("disabled");
+					$("#s02btn02").removeClass("disabled");
+					$("#s02btn03").removeClass("disabled");
+					$("#s041").removeClass("d-none");
+					$("#s042").removeClass("d-none");
+				} else {
+					alert(data.message + "，你沒資格阿你沒資格!");
+					//loginModal隱藏
+					$("#loginModal").modal("hide");
+					//顯示登入帳號
+					$("#s02_login_username").text(data.data.Username);
+					//隱藏登入與註冊按鈕
+					$("#s02_login_btn").addClass("d-none");
+					$("#s02_register_btn").addClass("d-none");
+					//顯示登出按鈕
+					$("#s02_logout_btn").removeClass("d-none");
+
+
+				}
+				setCookie("Uid01", data.data.Uid01, 7);
+			} else {
+				alert(data.message);
+			}
+		}
+		//uid檢測function
+		function showdata_check_uid(data) {
+			console.log(data);
+			if (data.state) {
+				if (data.data.State == "1") {
+					// 更新用戶名稱
+					$("#s02_login_username").text(data.data.Username);
+					// 隱藏登入與註冊按鈕
+					$("#s02_login_btn").addClass("d-none");
+					$("#s02_register_btn").addClass("d-none");
+					// 顯示登出按鈕
+					$("#s02_logout_btn").removeClass("d-none");
+					$("member_manage").removeClass("d-none");
+
+					// 顯示vip高級功能
+					$("#s02btn01").removeClass("disabled");
+					$("#s02btn02").removeClass("disabled");
+					$("#s02btn03").removeClass("disabled");
+					$("#s041").removeClass("d-none");
+					$("#s042").removeClass("d-none");
+				} else {
+					alert(data.message + "，你沒資格阿你沒資格!");
+					$("#s02_login_username").text(data.data.Username);
+					// 隱藏登入與註冊按鈕
+					$("#s02_login_btn").addClass("d-none");
+					$("#s02_register_btn").addClass("d-none");
+					// 顯示登出按鈕
+					$("#s02_logout_btn").removeClass("d-none");
+
+					//這裡不給顯示高級功能了
+
+					//顯示停權警告畫面 s13
+					$("#s13").removeClass("d-none");
+
+				}
+			}
+		}
+
+		// 以下是cookie都是网上搬来的， 不重要
+		function setCookie(cname, cvalue, exdays) {
+			const d = new Date();
+			d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+			let expires = "expires=" + d.toUTCString();
+			document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		}
+
+		function getCookie(cname) {
+			let name = cname + "=";
+			let decodedCookie = decodeURIComponent(document.cookie);
+			let ca = decodedCookie.split(';');
+			for (let i = 0; i < ca.length; i++) {
+				let c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+	</script>
+	<!-- 購物車 -->
+	<script>
+
+		function increaseValue() {
+			let quantityInput = document.getElementById('quantity');
+			let currentValue = parseInt(quantityInput.value);
+			let maxValue = parseInt(quantityInput.max);
+			if (currentValue < maxValue) {
+				quantityInput.value = currentValue + 1;
+			}
+		}
+
+		function decreaseValue() {
+			let quantityInput = document.getElementById('quantity');
+			let currentValue = parseInt(quantityInput.value);
+			let minValue = parseInt(quantityInput.min);
+			if (currentValue > minValue) {
+				quantityInput.value = currentValue - 1;
+			}
+		}
+
+		function addToCart(itemName, itemPrice) {
+			// 從 input 中獲取數量值
+			let quantity = parseInt(document.getElementById('quantity').value);
+
+			// 從 localStorage 中取得購物車內容，若無則使用空陣列
+			let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+			// 檢查該商品是否已存在於購物車中
+			let existingItem = cart.find(item => item.name === itemName);
+
+			if (existingItem) {
+				// 如果商品已存在，增加數量
+				existingItem.quantity += quantity;
+			} else {
+				// 如果商品不存在，將其添加到購物車並設置初始數量
+				cart.push({ name: itemName, quantity: quantity, price: itemPrice });
+			}
+
+			// 將更新後的購物車儲存到 localStorage
+			localStorage.setItem('cart', JSON.stringify(cart));
+
+			// 提示用戶商品已加入購物車
+			alert(itemName + " 已加入購物車，數量：" + quantity);
+
+
+		}
+		// 當頁面加載時更新購物車指示器
+		window.onload = updateCartIndicator;
+
+		// 監聽 localStorage 的變化
+		window.addEventListener('storage', function (event) {
+			if (event.key === 'cart') {
+				updateCartIndicator(); // 更新購物車指示器
+			}
+		});
+
+
+
+	</script>
+	<!-- 產品內文切換監聽 -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+
+			// 为“產品特色”类别的li元素添加active类
+			document.querySelector('#tabs ul.nav li a[href="#tabs-tab-title-1"]').parentNode.classList.add('active');
+			// 为“產品特色”内容的div元素添加active类
+			document.getElementById('tabs-tab-title-1').classList.add('active');
+
+
+			var tabs = document.querySelectorAll('#tabs ul.nav a');
+			var tabContents = document.querySelectorAll('#tabs div');
+
+			tabs.forEach(function (tab) {
+				tab.addEventListener('click', function (event) {
+					event.preventDefault(); // 阻止默认的链接行为
+
+					// 移除所有tab的active类
+					tabs.forEach(function (tab) {
+						tab.parentElement.classList.remove('active');
+					});
+
+					// 移除所有tab内容的active类
+					tabContents.forEach(function (content) {
+						content.classList.remove('active');
+					});
+
+					// 为当前点击的tab的父元素添加active类
+					tab.parentElement.classList.add('active');
+
+					// 根据当前点击的tab的href属性找到对应的内容，并添加active类
+					var activeTabContent = document.getElementById(tab.getAttribute('href').slice(1));
+					activeTabContent.classList.add('active');
+				});
+			});
+		});
+	</script>
+</body>
+
+</html>
